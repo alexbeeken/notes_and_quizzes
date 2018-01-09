@@ -1,0 +1,84 @@
+- q: What wasnt garbage collected until 2.2?
+  a: symbols
+- q: Does "and" have higher or lower precedence than =?
+  a: higher
+- q: Does && have higher or lower precedence than =?
+  a: lower
+- q: Evaluate false == false
+  a: true
+- q: Evaluate nil == false
+  a: true
+- q: Evaluate [] == false
+  a: false
+- q: Evaluate "" == false
+  a: false
+- q: Evaluate 0 == false
+  a: false
+- q: Will this cause an error? foo (1, 2)
+  a: true
+- q: Will this cause an error? foo (6)
+  a: false
+- q: Is there a difference between foo(5, 6) and foo (5, 6)?
+  a: true
+- q: What does declaring module Foo create that class Foo::Bar does not?
+  a: a lexical scope
+- q: What is p foo shorthand for?
+  a: puts(foo.inspect)
+- q: What does the -> create?
+  a: proc
+- q: How do you call a proc?
+  a: .call or []
+- q: What does super have that super() does not?
+  a: the child arguements
+- q: What defines the behavior of the ===?
+  a: the class its used in
+- q: What does .equal? check for?
+  a: matching object_ids
+- q: What does .eql? check for?
+  a: matching value and type
+- q: What does == check for?
+  a: matching value
+- q: What does += do that .concat does not?
+  a: reinitializes object
+- q: What is array.map(&:method_name) shorthand for?
+  a: array.map { |elem| elem.method_name }
+- q: What does &foo do?
+  a: call to_proc on foo
+- q: What does &foo do?
+  a: call to_proc on foo
+- q: What is returned from a conditional if no conditions are met?
+  a: nil
+- q: How you call a private method outside its class?
+  a: .send(:method_name)
+- q: What does class Foo; include module_foo do?
+  a: Adds module methods as instance methods
+- q: What does class Foo; extend module_foo do?
+  a: Adds module methods as class methods
+- q: What is .collect an alias of?
+  a: .map
+- q: What does .map return?
+  a: the new changed array
+- q: What does .each return?
+  a: the original array
+- q: Do .map and .each affect the original array?
+  a: false
+- q: How do you remove all nil values in an array?
+  a: .compact
+- q: Is Foo::new a valid way to create a new instance of foo?
+  a: true
+- q: Is Foo.new::bar a valid way to create a new instance of foo and call bar?
+  a: true
+- q: What does puts return?
+  a: nil
+- q: Does the interpreter pre instantiate variable declaration inside of conditionals?
+  a: true
+- q: Does .dup copy mixed in module methods?
+  a: false
+- q: What variable scope starts with _?
+  a: local
+- q: What variable scope starts with $?
+  a: global
+- q: What variable scope starts with @@?
+  a: class
+- q: What variable scope starts with @?
+  a: instance
