@@ -1,0 +1,44 @@
+- q: in a deleted record, what does model.find(id) return?
+  a: error
+- q: in a deleted record, what does model.find_by_id(id) return?
+  a: nil
+- q: in a deleted record, what does model.find_by_id(id) return?
+  a: nil
+- q: How would you use fragment caching on a person model in erb?
+  a: <% cache person do %>
+- q: How would you use fragment caching on a person model in erb but ONLY if they are an admin?
+  a: <% cache_if admin?, person do %>
+- q: What would you add to the following code to turn on collection caching <%= render partial: 'products/product', collection: @products %>?
+  a: cached: true
+- q: What is the advantage of Russian doll caching in fragments?
+  a: a single record in a collection will not invalid the whole cache
+- q: true/false SQL caches are only stored for the duration of an action
+  a: true
+- q: What type of data can you cache with low level caching?
+  a: anything
+- q: Rails.cache.fetch("#{cache_key}/value", expires_in: 12.hours) using cache_key the cache will be invalidated when the model is...
+  a: updated
+- q: true/false Rails.cache.fetch both writes and reads the low level cache
+  a: true
+- q: What is the default MemCacheStore gem bundled with rails?
+  a: dalli
+- q: true/false config.cache_store = :memory_store restricts the cache to the same process that the server is running on
+  a: true
+- q: true/false config.cache_store = :file_store, "/path/to/cache/directory" allows different server processes to share the same cache
+  a: true
+- q: config.cache_store = :null_store configures the server to cache what?
+  a: nothing
+- q: config.cache_store = :null_store should only be used in what environments?
+  a: dev or test
+- q: true/false weak etags are default in rails.
+  a: true
+- q: Weak etags are prefaced with what?
+  a: W/
+- q: What rake task can you use to toggle caching in dev?
+  a: bin/rails dev:cache
+- q: What does CGI stand for?
+  a: Common Gateway Interface
+- q: true/false transactions do not work across multiple database connections
+  a: true
+- q: true/false In a nested transaction, a failed child transaction will also ROLLBACK the parent transaction.
+  a: false

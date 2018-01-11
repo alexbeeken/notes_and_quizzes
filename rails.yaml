@@ -1,0 +1,60 @@
+- q: What does HashWithIndifferentAccess allow that Hash does not?
+  a: symbol keys
+- q: What does CSRF stand for?
+  a: cross sight request forgery
+- q: How do you prevent CSRF attacks?
+  a: Add protect_from_forgery to ApplicationController
+- q: Where is the CSRF token in a POST, PUT or DELETE request?
+  a: hidden_field in the form
+- q: Where is the CSRF token in a GET request?
+  a: header
+- q: What prevents someone from stealing the CSRF token?
+  a: broswers' same origin policy
+- q: Can a model define a has_many relationship with itself?
+  a: yes, using belongs_to (symbol)parent, class => Foo
+- q: Can a model define a has_many relationship with itself?
+  a: yes, using belongs_to (symbol)parent, class => Foo
+- q: true/false When defining a nested route, member defines a named route for a single resource instance
+  a: true
+- q: true/false When defining a nested route, collection defines a named route for the resource index
+  a: true
+- q: what does Action Cable do?
+  a: deals with websockets
+- q: Action Mailer is essentially a wrapper for which two components?
+  a: Action Controller and the Mail gem.
+- q: what three things is Action Pack responsible for?
+  a: routing, controller and views
+- q: what three things is Action View responsible for?
+  a: template lookup, rendering and view helpers
+- q: what does Active Job do?
+  a: handle jobs
+- q: what handles the scheduling and execution of Action Mailers' deliver_later?
+  a: Active Job
+- q: Active Model provides a set of known interfaces for which type of class?
+  a: model
+- q: What does ActiveModel(colon colon)Callbacks provide?
+  a: before_create, after_create and around_create
+- q: What does ActiveModel(colon colon)Dirty provide?
+  a: ways to track changes in your object
+- q: Why was Active Model created?
+  a: to provde an interface for Action Pack separate from Active Record
+- q: Active Record connects classes to
+  a: relational databases
+- q: Active Record is essentially just an (dont abbreviate)
+  a: object relational mapping
+- q: Active Storage makes it easy to upload referenc files in what type of location?
+  a: the cloud
+- q: What does an Active Storage blob model record?
+  a: attachment metadata
+- q: true/false Active Storage blobs hold binary data
+  a: false
+- q: What method declares a single attachment on an ApplicationRecord class?
+  a: has_one_attached (symbol)attachment_name
+- q: Which method would you use to destroy an Active Storage attachment and resource file?
+  a: .purge
+- q: How do you check if there is an Active Storage attachment present?
+  a: .attached?
+- q: Active Support provides extension to the standard lib and...
+  a: utility files
+- q: Can Active Support be used outside of Rails?
+  a: true

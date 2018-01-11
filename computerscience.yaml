@@ -1,0 +1,16 @@
+- q: what is a tree?
+  a: a binary data structure with a simple child parent hierarchy
+- q: What does DAG stand for?
+  a: directed acyclic graph
+- q: Trees are graphs with the restriction that...
+  a: nodes can only have one parent
+- q: true/false trees can be recursive
+  a: false
+- q: true/false DAGs can be recursive
+  a: true
+- q: What is the fastest way to search a sorted array?
+  a: binary search
+- q: what does REST stand for?
+  a: representational state transfer
+- q: what dis SOAP stand for before version 1.2?
+  a: simple object access protocol

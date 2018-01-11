@@ -1,0 +1,44 @@
+- q: How many blocks can you have in any argument list?
+  a: one
+- q: A proc is an instance of the (blank) class
+  a: Proc
+- q: true/false You can pass multiple procs into method arguments
+  a: true
+- q: true/false You can pass multiple blocks into argument lists
+  a: false
+- q: true/false Blocks are kind of just syntax
+  a: true
+- q: true/false Procs are objects that can be called later
+  a: true
+- q: true/false Lambdas are procs with a different flavor
+  a: true
+- q: What do lambas check that procs do not?
+  a: number of arguments
+- q: What do procs do with extra arguments?
+  a: ignore them
+- q: What does a proc return when given no arguments even though is should have one?
+  a: returns nil
+- q: true/false return inside of a lambda still runs the code outside of it
+  a: true
+- q: true/false return inside of a proc still runs the code outside of it
+  a: false
+- q: true/false closures are functions that also have a referncing environment
+  a: true
+- q: Proc is short for
+  a: procedure
+- q: A scope lambda creates which type of method?
+  a: class
+- q: true/false Scopes are just a way to provide syntactic sugar for find_by
+  a: true
+- q: What word do you use to describe being able to chain scopes together, like model.red_colors.small_sizes
+  a: composable
+- q: You can use the stabby lambda to have scopes accept what?
+  a: arguments
+- q: Giving a scope an argument makes it what?
+  a: procedural
+- q: true/false Scopes are available when creating/building a record
+  a: true
+- q: true/false class methods are available on scopes.
+  a: true
+- q: Duck typing is less concerned with the class but more concerned with the
+  a: methods

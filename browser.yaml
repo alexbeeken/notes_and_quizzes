@@ -1,0 +1,28 @@
+- q: What three things have to be the same to satisfy same origin?
+  a: protocol, port, host
+- q: What is the other name for the three things that have to be the same to satisfy same origin?
+  a: scheme, host, port tuple
+- q: Is http://store.company.com/dir/page.html\n same origin with\n http://store.company.com/dir2/other.html\n if not, what is different?
+  a: true
+- q: Is http://store.company.com/dir/page.html\n same origin with\n https://store.company.com/secure.html\n if not, what is different?
+  a: protocol
+- q: Is http://store.company.com/dir/page.html\n same origin with\n http://store.company.com:81/dir/etc.html\n if not, what is different?
+  a: port
+- q: Is http://store.company.com/dir/page.html\n same origin with\n http://news.company.com/dir/other.html\n if not, what is different?
+  a: host
+- q: true/false IE makes exceptions for same origins that are in "Trust Zones"
+  a: true
+- q: true/false IE doesnt take port into account for same origin
+  a: true
+- q: What does AJAX stand for?
+  a: Asynchronous Javascript and XML
+- q: AJAX typically involves sending HTTP requests from client to \nserver and processing the server's response, without doing what?
+  a: reloading the page
+- q: what headers does https' conditional GET look for?
+  a: HTTP_IF_NONE_MATCH and HTTP_IF_MODIFIED_SINCE
+- q: Whose responssibility is it to check for the content identifier or etag?
+  a: server
+- q: What does HTTP use to version resources and check for updates quickly?
+  a: etags
+- q: true/false weak etags tolerate minor changes in the response body as long as the objects are what?
+  a: semantically equivalent

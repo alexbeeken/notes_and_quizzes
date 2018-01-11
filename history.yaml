@@ -1,0 +1,56 @@
+- q: What does DHH stand for?
+  a: David Heinemeier Hansson
+- q: Who is "Mats"/"Matz"?
+  a: Yukihiro Matsumoto
+- q: What version introduced duck typing?
+  a: 1.0
+- q: What year was rails 1.0 released?
+  a: 2005
+- q: What version introduced Fully Qualified Names? (Foo::Bar)
+  a: 1.0
+- q: What year was Rails 2.0 released?
+  a: 2007
+- q: What year was Rails 3.0 released?
+  a: 2010
+- q: What year was Rails 4.0 released?
+  a: 2013
+- q: Which release introduced Turbolinks
+  a: 4.0
+- q: What year was Rails 5.0 released?
+  a: 2016
+- q: Which release introduced Spring?
+  a: 4.1
+- q: Which release introduced Metal?
+  a: 2.3
+- q: Which release decoupled the Rails core?
+  a: 3.0
+- q: Which release introduced Bundler to handle dependencies?
+  a: 3.0
+- q: Which released introduced Active Model to separate Active Record from Action Pack?
+  a: 3.0
+- q: Which release introduced Abstract Controller?
+  a: 3.0
+- q: Which release introduced Action Dispatch to handle all routing?
+  a: 3.0
+- q: Which release replaced MemCacheStore with Dalli?
+  a: 4.0
+- q: Which release extracted several features into separate gems?
+  a: 4.0
+- q: Which release introduces internationalization?
+  a: 2.2
+- q: Which release introduces Action Pack Variants?
+  a: 4.1
+- q: Which release of Ruby introduced the new hash syntax?
+  a: 1.9
+- q: Which release of Ruby introduced semantic versioning?
+  a: 2.1
+- q: Which release of Ruby introduced new lambda syntax? () ->
+  a: 1.9
+- q: What large version number does this describe: optimizations, security, use rack, internationalization, support ruby 1.9
+  a: 2
+- q: What large version number does this describe: decoupling, asset pipeline, faster dev env, Application object
+  a: 3
+- q: What large version number does this describe: extractings a lot of featues into gems, better API, strong params, Dalli
+  a: 4
+- q: What large version number does this describe: Action Cable, API only templates, test runner
+  a: 5
