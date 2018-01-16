@@ -6,7 +6,7 @@
   a: 1.0
 - q: What year was rails 1.0 released?
   a: 2005
-- q: What version introduced Fully Qualified Names? (Foo::Bar)
+- q: What version introduced Fully Qualified Names? (Foo(colon colon)Bar)
   a: 1.0
 - q: What year was Rails 2.0 released?
   a: 2007
@@ -46,11 +46,11 @@
   a: 2.1
 - q: Which release of Ruby introduced new lambda syntax? () ->
   a: 1.9
-- q: What large version number does this describe: optimizations, security, use rack, internationalization, support ruby 1.9
+- q: What large version number does this describe optimizations, security, use rack, internationalization, support ruby 1.9
   a: 2
-- q: What large version number does this describe: decoupling, asset pipeline, faster dev env, Application object
+- q: What large version number does this describe decoupling, asset pipeline, faster dev env, Application object
   a: 3
-- q: What large version number does this describe: extractings a lot of featues into gems, better API, strong params, Dalli
+- q: What large version number does this describe extractings a lot of featues into gems, better API, strong params, Dalli
   a: 4
-- q: What large version number does this describe: Action Cable, API only templates, test runner
+- q: What large version number does this describe Action Cable, API only templates, test runner
   a: 5

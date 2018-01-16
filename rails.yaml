@@ -1,7 +1,7 @@
 - q: What does HashWithIndifferentAccess allow that Hash does not?
   a: symbol keys
 - q: What does CSRF stand for?
-  a: cross sight request forgery
+  a: cross site request forgery
 - q: How do you prevent CSRF attacks?
   a: Add protect_from_forgery to ApplicationController
 - q: Where is the CSRF token in a POST, PUT or DELETE request?
@@ -13,7 +13,7 @@
 - q: Can a model define a has_many relationship with itself?
   a: yes, using belongs_to (symbol)parent, class => Foo
 - q: Can a model define a has_many relationship with itself?
-  a: yes, using belongs_to (symbol)parent, class => Foo
+  a: true
 - q: true/false When defining a nested route, member defines a named route for a single resource instance
   a: true
 - q: true/false When defining a nested route, collection defines a named route for the resource index
@@ -42,7 +42,7 @@
   a: relational databases
 - q: Active Record is essentially just an (dont abbreviate)
   a: object relational mapping
-- q: Active Storage makes it easy to upload referenc files in what type of location?
+- q: Active Storage makes it easy to upload reference files in what type of location?
   a: the cloud
 - q: What does an Active Storage blob model record?
   a: attachment metadata

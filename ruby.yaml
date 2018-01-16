@@ -44,8 +44,6 @@
   a: array.map { |elem| elem.method_name }
 - q: What does &foo do?
   a: call to_proc on foo
-- q: What does &foo do?
-  a: call to_proc on foo
 - q: What is returned from a conditional if no conditions are met?
   a: nil
 - q: How you call a private method outside its class?

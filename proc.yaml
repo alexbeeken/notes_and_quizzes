@@ -1,0 +1,48 @@
+- q: What do you use to run things in parallel?
+  a: threads
+- q: What method can you run on all callable objects?
+  a: call
+- q: What are the most common objects in Ruby?
+  a: methods
+- q: true/false a lambda is a special flavor of a proc object
+  a: true
+- q: true/false there exists a Function class in Ruby
+  a: false
+- q: What do you provide to Proc.new to create a proc?
+  a: block
+- q: true/false Procs can be assigned to variables.
+  a: true
+- q: What is the shorthand method for Proc.new?
+  a: proc
+- q: What do you put in front a method block argument?
+  a: ampersand
+- q: true/false a Proc can serve as the code inside a method call
+  a: true
+- q: What is the name of a block of code that carries around it's own creation context?
+  a: closure
+- q: Closures are important because they contain a piece of...
+  a: state
+- q: choose one proc/lambda doesnt care about the number of arguments
+  a: proc
+- q: when you give a proc no arguments it returns
+  a: nil
+- q: true/false you can use the splat more than once in an argument list
+  a: true
+- q: true/false there is a lambda class
+  a: false
+- q: true/false you can use the & (unary ampersand) operator to create a lambda
+  a: false
+- q: true/false lambdas require explicit creation
+  a: true
+- q: lambda/proc return runs the rest of the containing block
+  a: lambda
+- q: lambda/proc return returns out of containing block
+  a: proc
+- q: How do you unbind an instance from a method object?
+  a: .unbind
+- q: What do you use to assign objects' methods to variables
+  a: .method
+- q: What do you use to assign class' methods to variables
+  a: .instance_method
+- q: true/false although important to know .instance_method, in practice it's quite rare and you shouldn't really use is
+  a: true
