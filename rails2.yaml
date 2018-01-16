@@ -8,15 +8,15 @@
   a: <% cache person do %>
 - q: How would you use fragment caching on a person model in erb but ONLY if they are an admin?
   a: <% cache_if admin?, person do %>
-- q: What would you add to the following code to turn on collection caching <%= render partial: 'products/product', collection: @products %>?
-  a: cached: true
+- q: What would you add to the following code to turn on collection caching <%= render partial(colon) 'products/product', collection(colon) @products %>?
+  a: cached true
 - q: What is the advantage of Russian doll caching in fragments?
   a: a single record in a collection will not invalid the whole cache
 - q: true/false SQL caches are only stored for the duration of an action
   a: true
 - q: What type of data can you cache with low level caching?
   a: anything
-- q: Rails.cache.fetch("#{cache_key}/value", expires_in: 12.hours) using cache_key the cache will be invalidated when the model is...
+- q: Rails.cache.fetch("#{cache_key}/value", expires_in(colon) 12.hours) using cache_key the cache will be invalidated when the model is...
   a: updated
 - q: true/false Rails.cache.fetch both writes and reads the low level cache
   a: true
