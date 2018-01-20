@@ -1,0 +1,4 @@
+- q: What is this an example of? '\x41\x42\x43'
+  a: hexadecimal escape sequences
+- q: What is this an example of? '\u0041\u0042\u0043'
+  a: unicode escape sequences

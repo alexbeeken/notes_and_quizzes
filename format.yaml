@@ -1,0 +1,26 @@
+- q: Evaluate > "%s" % "foo"
+  a: "foo"
+- q: Evaluate > '%s' % 'foo'
+  a: "foo"
+- q: Evaluate > '%<foo>s' % {foo: 'bar'}
+  a: "bar"
+- q: A named format string element requires what type of argument?
+  a: hash
+- q: Evaluate > '%<foo>s' .% foo: 'bar'
+  a: "bar"
+- q: What is the short hand for % that lets you drop the hash brackets?
+  a: .%
+- q: What formatting type makes the variable an integer?
+  a: %d
+- q: What formatting type makes the variable a float?
+  a: %f
+- q: Evaluate > '%.3f' % 1.234567
+  a: "1.235"
+- q: Evaluate > '%2s' % 'h'
+  a: " h"
+- q: What does the letter at the end of the format string indicate?
+  a: type
+- q: What does a number between % and s indicate?
+  a: padding
+- q: Evaluate > '%-2s' % 'h'
+  a: "h "

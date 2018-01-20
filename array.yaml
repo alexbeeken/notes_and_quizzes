@@ -1,0 +1,2 @@
+- q: What's the easiest way to create an Array of 9 arrays?
+  a: Array.new(9, [])

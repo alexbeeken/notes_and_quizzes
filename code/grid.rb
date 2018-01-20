@@ -1,4 +1,5 @@
 require 'pry'
+require 'benchmark'
 
 matrix = [[".",".",".","1","4",".",".","2","."],
  [".",".","6",".",".",".",".",".","."],
@@ -53,53 +54,36 @@ matrix = [[".",".",".","1","4",".",".","2","."],
 ]
 
 def sudoku2(grid)
-  check_grids(grid) &&
+  check_rows(chunk_grids(grid)) &&
     check_rows(grid) &&
     check_rows(grid.transpose.map &:reverse)
 end
 
 def check_rows(grid)
   grid.all? do |row|
-    doubles?(row)
-  end
-end
-
-def check_grids(grid)
-  row1 = grid.map { |g| g.slice(0..2) }
-  row2 = grid.map { |g| g.slice(3..5) }
-  row3 = grid.map { |g| g.slice(6..8) }
-  grid1 = row1.map { |g| g.slice(0..2).flatten }
-  grid2 = row1.map { |g| g.slice(3..5).flatten }
-  grid3 = row1.map { |g| g.slice(6..8).flatten }
-  grid4 = row2.map { |g| g.slice(0..2).flatten }
-  grid5 = row2.map { |g| g.slice(3..5).flatten }
-  grid6 = row2.map { |g| g.slice(6..8).flatten }
-  grid7 = row3.map { |g| g.slice(0..2).flatten }
-  grid8 = row3.map { |g| g.slice(3..5).flatten }
-  grid9 = row3.map { |g| g.slice(6..8).flatten }
-  binding.pry
-  rows = [row1, row2, row3]
-  rows.all? do |row|
-    row.all? do |g|
-      p g
-      # p "row: #{row}"
-      # p "doubles: #{!doubles?(row)}"
-      return false if !doubles?(g)
-      true
+    last = nil
+    row.sort.all? do |num|
+      return false if num == last && num != '.'
+      last = num
     end
   end
 end
 
-def doubles?(a)
-  last = nil
-  a.sort.all? do |num|
-    return false if num == last && num != "."
-    last = num
+def chunk_grids(grid)
+  hash = Hash.new { |h, k| h[k] = [] }
+  grid.each_with_index do |row, i|
+    row.each_with_index do |num, j|
+      grid_num = (j/3).floor + ((i/3).floor * 3)
+      hash[grid_num] << num
+    end
   end
+  hash.map { |h| h[1] }
 end
 
- # puts sudoku2(matrix)
- # puts sudoku2(matrix2)
- # puts sudoku2(matrix3)
- # puts sudoku2(matrix4)
- puts sudoku2(matrix5)
+Benchmark.bm do |x|
+  x.report { puts sudoku2(matrix) }
+  # puts sudoku2(matrix2)
+  # puts sudoku2(matrix3)
+  # puts sudoku2(matrix4)
+  x.report { puts sudoku2(matrix5) }
+end
