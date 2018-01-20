@@ -207,3 +207,70 @@ class Z < Y
   end
 end
 # YOU SHOULDN'T REALLY DO THIS THOUGH
+
+# eval can execute strings as code
+
+# prints 4
+puts eval("2+2")
+
+print "Choose a method name: "
+# m = gets.chomp
+m = "dyanmic_method"
+eval("def #{m}; puts 'hi'; end")
+eval(m)
+
+# The Binding class encapsulates current scope
+def use_a_binding(b)
+  eval('puts str', b)
+end
+
+str = 'hello world'
+use_a_binding(binding)
+# the method above should use the str variable
+
+# self is main in this context
+p self
+a = []
+a.instance_eval { p self }
+
+# you can pass an argument to instance_exec
+a = "Example String"
+p a.instance_exec("a") { |d| self.split(d) }
+
+# class_eval puts you inside of a class defition
+c = Class.new
+c.class_eval do
+  def some_method
+    puts 'inside class'
+  end
+end
+c = c.new
+c.some_method
+
+# The class keyword does not use variables in the scope
+# You wont see the string but you will see the error
+begin
+  str = 'string in this context'
+  class C
+    puts str
+  end
+rescue
+  puts "ERROR trying to use local variable in class"
+end
+
+# Now it works
+C.class_eval { puts str }
+
+# Let's combine this with def
+begin
+  foo = "instance method"
+  C.class_eval { def talk; puts foo; end }
+  C.new.talk
+rescue
+  puts "ERROR - def inside class eval string is out of scope"
+end
+
+# now it works
+# and define_method returns a proc object
+C.class_eval { define_method('talk') { puts foo }}
+C.new.talk

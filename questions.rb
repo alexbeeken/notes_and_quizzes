@@ -1,6 +1,6 @@
 require 'yaml'
 
-TOPICS = %w[ruby rails history rails rails2 ruby ruby2 sql threads proc pry]
+TOPICS = %w[ruby rails history rails rails2 ruby ruby2 sql threads proc pry ruby3]
 
 def user_message(&block)
   block.call
