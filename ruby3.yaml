@@ -4,7 +4,7 @@
   a: eval
 - q: Using eval can you define methods dynamically?
   a: yes
-- q: What does Binding encapsulate in effect at a given point of execution?
+- q: What does binding encapsulate in effect at a given point of execution?
   a: local variables
 - q: true/false using eval with any user provided strings is a good idea.
   a: false
@@ -28,3 +28,32 @@
   a: anonymous
 - q: What does define_method return?
   a: proc
+- q: In terms of scope, what do def and class not have that class_eval and define_method do have?
+  a: local scope
+- q: what error does readline raise that gets doesnt?
+  a: EOFError
+- q: $1, $2, $n contain the most recent return value of what type?
+  a: regex
+- q: Backticks (``) run a system command and return what?
+  a: output
+- q: System command (system('date')) returns what?
+  a: boolean or nil
+- q: true/false backticks set $? the same as system does.
+  a: true
+- q: true/false A call to a nonexistent command with backticks raises a fatal error.
+  a: true
+- q: You can also call system commands with what literal operator (and delimeter)?
+  a: \%x
+- q: You can use any delimeter you want when using literal operators as long as they what?
+  a: match
+- q: true/false You can use string interpolation with backticks or %x.
+  a: true
+- q: open interacts with another program and can also take an optional what as an argument?
+  a: block
+- q: Open3 provides a way to interact with other programs. What is it called?
+  a: popen3
+- q: popen3 returns what three I/O handles? (no commas, space delim, order of assignment)
+  a: stdin stdout stderr
+- q: popen3 also returns one last thing what it is?
+  a: thread
+- q: 

@@ -1,0 +1,81 @@
+- q: callbacks and hooks are events that are common for what?
+  a: metaprogramming
+- q: You can write a (blank) to trigger when an event happens.
+  a: callback
+- q: You can prevent a NoMethodError by defining what method?
+  a: method_missing
+- q: What is arguably the most common used runtime hook in ruby?
+  a: method_missing
+- q: method_missing is defined at the top of the class tree in what class?
+  a: BasicObject
+- q: true/false method_missing is available in all classes
+  a: true
+- q: What error gets raised with the following? `> a` (a isnt defined)
+  a: NameError
+- q: What error gets raised with the following? `> a?` (a? isnt defined)
+  a: NoMethodError
+- q: What class method gets called on a module when its included?
+  a: included
+- q: What method allows you to an extend any instance of an object?
+  a: extended
+- q: What is the instance version of the included callback?
+  a: extended
+- q: true/false modules can use methods to see when they're being included or extended
+  a: true
+- q: true/false classes can also tell when they are being subclassed
+  a: true
+- q: Classes can tell when theyre subclassed with what class method?
+  a: inherited
+- q: true/false inherited cascades up the chain of dependencies.
+  a: true
+- q: What method do you use to set a constant dynamically?
+  a: const_set
+- q: What is the callback for a missing constant?
+  a: const_missing
+- q: What class method will be called when any instance method is defined?
+  a: method_added
+- q: What does the same thing for method_added but for singleton methods?
+  a: singleton_method_added
+- q: true/false singleton_method_added calls itself
+  a: true
+- q: Which method returns a list of method names as symbols?
+  a: methods
+- q: true/false Writing bang methods without bang methods is bad practice
+  a: true
+- q: Every object (except BasicObject) has a private_methods method and another similar one. What is it?
+  a: protected_methods
+- q: .respond_to? only pertains to what type of method?
+  a: public
+- q: Which variation of .methods returns all public and protected instance methods?
+  a: instance_methods
+- q: Which variation of .methods returns all public instance methods?
+  a: public_instance_methods
+- q: Which variation of .methods returns all private instance methods?
+  a: private_instance_methods
+- q: Which variation of .methods returns all protected instance methods?
+  a: protected_instance_methods
+- q: true/false If you pass in false to any of the methods variations it will limit scope to the class you are calling on.
+  a: true
+- q: true/false singleton methods will show up if you call .methods
+  a: true
+- q: What method gives you the local_variables of a scope?
+  a: local_variables
+- q: What method gives you the global_variables of a scope?
+  a: global_variables
+- q: What short hand global is the library load path? (long form: $LOAD_PATH)
+  a: $:
+- q: What global is an object with match data based on most recent pattern-matching operation?
+  a: $~
+- q: What global shows the name of the file which the current program is executed?
+  a: $0
+- q: What global returns the name of the file currently being executed?
+  a: $FILENAME
+- q: true/false variations of the _variables methods return the values for vars in the scope?
+  a: false
+- q: What is the chief tool for finding the call history?
+  a: caller
+- q: The caller method returns an array with what type of elements?
+  a: strings
+- q: Ruby stacktraces look at with "askance" because they consist solely of what?
+  a: strings
+- q: 

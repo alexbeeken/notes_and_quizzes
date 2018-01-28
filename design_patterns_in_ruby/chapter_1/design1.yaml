@@ -1,0 +1,54 @@
+- q: Program to a(n) (blank), not an implementation.
+  a: interface
+- q: Prefer what over inheritance?
+  a: composition
+- q: What does YAGNI stand for?
+  a: you aint gonna need it
+- q: Separate things that (blank) from things that stay the same
+  a: change
+- q: You should delegate, delegate and then what?
+  a: delegate
+- q: Programming to an interface involves making all of your types as (blank) as possible?
+  a: general
+- q: Inheritance tends to do what between sub and super classes?
+  a: marry them
+- q: true/false Sub classes have access to too much about their superclass
+  a: true
+- q: With composition objects arent a "kind of" something they (blank) something.
+  a: have
+- q: true/false Composition over inheritance increases incapsulation.
+  a: true
+- q: choose one: inheritance/composition - forces classes to interact through an interface
+  a: composition
+- q: Whats the correct term for "passing the buck"?
+  a: delegation
+- q: Name the pattern for this problem: your code always does the same thing... except at step 44
+  a: template
+- q: Name the pattern for this problem: there is more than one technique to perform the procedure
+  a: strategy
+- q: Name the pattern for this problem: class A needs to know what class B is up to but not couple it
+  a: observer
+- q: Name the pattern for this problem: a collection of objects needs to look like a single object
+  a: composite
+- q: Name the pattern for this problem: need to access collection but dont want to show where or how
+  a: iterator
+- q: Name the pattern for this problem: sends instructions with itself, like a postcard
+  a: command
+- q: Name the pattern for this problem: works but the interface is wrong
+  a: adapter
+- q: Name the pattern for this problem: the object is somewhere else and I want to use it but dont want to care about where
+  a: proxy
+- q: Name the pattern for this problem: You want to add responsibilities to your object at runtine
+  a: decorator
+- q: Name the pattern for this problem: The instance of the class needs to be the only instance of the class
+  a: singleton
+- q: Name the pattern for this problem: You want to add responsibilities to your object at runtine
+  a: decorator
+- q: Name the pattern for this problem: Need to produce an object of which only a subclass will know exactly which type
+  a: factory
+- q: Name the pattern for this problem: Need to crete families of compatible objects
+  a: abtract factory
+- q: Name the pattern for this problem: Create a very complex, dynamic object
+  a: builder
+- q: Name the pattern for this problem: need to interact with another programming language
+  a: interpretor

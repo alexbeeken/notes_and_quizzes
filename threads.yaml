@@ -1,0 +1,46 @@
+- q: true/false threads take turns or time share executing instructions.
+  a: true
+- q: What color are threads that execute inside the interpreter?
+  a: green
+- q: Threads will try to rely on what to facilitate threading first before falling back on green threads?
+  a: operating system
+- q: What happens to the running threads in a program if it ends?
+  a: they are killed
+- q: What do you pass to Thread.new?
+  a: block
+- q: If you want a thread to finish executing what do you call on it?
+  a: join
+- q: Name the three ways to stop a thread (separated by spaces, no commas, alphabetical order)
+  a: exit kill terminate
+- q: What do you call inside the thread to stop it (using kill)?
+  a: Thread.kill
+- q: When a thread is not dead but not in an asleep state it is...
+  a: awake
+- q: When a thread is not dead but not in an awake state it is...
+  a: asleep
+- q: When a thread is not alive it is...
+  a: dead
+- q: When a thread is not dead it is...
+  a: alive
+- q: What are the four thread states (alphabetical, separated by spaces, no commas)
+  a: alive asleep awake dead
+- q: What is the term for a thread-like block that you can resume and yield?
+  a: fiber
+- q: Fiber uses what class method to return to calling block?
+  a: yield
+- q: Fiber use what instance method to resume running?
+  a: resume
+- q: Fibers dont do anything you call what on them?
+  a: resume
+- q: true/false fibers are the technical basis for enumerators
+  a: true
+- q: true/false passing an argument to Thread like this Thread.new(conn) |c| prevents threads from fighting over the same variable names?
+  a: true
+- q: true/false $1, $1, $n are thread-local globals
+  a: true
+- q: true/false Threads do not have their own variable keys
+  a: false
+- q: true/false thread keys are helpful because they can hold state even after the thread is finished running
+  a: true
+- q: true/false $? is thread local
+  a: true

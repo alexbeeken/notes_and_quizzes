@@ -274,3 +274,181 @@ end
 # and define_method returns a proc object
 C.class_eval { define_method('talk') { puts foo }}
 C.new.talk
+
+# doesn't finish because
+# it sleeps too long for the it to execute the second puts
+t = Thread.new do
+  puts 'inside the thread 1'
+  sleep 1
+  puts 'end of the thread 1'
+end
+
+t.join
+puts "outside the thread 1"
+t.kill
+
+# we need to assign it to a variable
+# in order to get it working
+t = Thread.new do
+  puts 'inside the thread 2'
+  sleep 0.2
+  puts 'end of the thread 2'
+end
+
+puts 'outside thread 2'
+t.join
+t.kill
+
+# you can stop threads from inside their execution
+
+puts 'attempt to open some files'
+t = Thread.new do
+  (0..2).each do |n|
+    begin
+      puts "trying to open #{n}"
+      File.open("File0#{n}") do |f|
+        text << f.readlines
+      end
+    rescue
+      puts "Failed on n=#{n}"
+      Thread.exit
+    end
+  end
+end
+
+t.join
+puts 'Thread 3 finished'
+t.kill
+
+# the four state of a thread are
+# awake
+# asleep
+# alive
+# dead
+
+t = Thread.new do
+  puts 'thread 4 starting'
+  Thread.stop
+  puts 'thread 4 resuming'
+end
+
+puts "status of thread 4: #{t.status}"
+puts "is thread 4 stopped?: #{t.stop?}"
+puts 'thread 4 finished'
+puts
+puts 'waking up thread and joining it...'
+t.wakeup
+t.join
+puts
+puts "Is this alive? #{t.alive?}"
+puts "Inspect string for thread: #{t.inspect}"
+t.kill
+
+# Fibers can return to their calling block several times
+
+f = Fiber.new do
+  puts 'first block'
+  Fiber.yield
+  puts 'second block'
+  Fiber.yield
+  puts 'third block'
+end
+puts 'starting fiber'
+f.resume
+puts 'intermission'
+f.resume
+puts 'finale'
+f.resume
+puts 'go home'
+
+# when variables in local scope changes are permanent
+a = 1
+puts a
+t = Thread.new { a = 2}
+t.run
+puts a
+
+# Still changes variable even after Thread.stop
+a = 1
+t = Thread.new { Thread.stop; a = 2}
+puts a
+t.run
+puts a
+
+# global variables are still global
+$var = "$var unchanged global"
+puts $var
+a = Thread.new { $var = "new $var global value" }
+a.join
+puts $var
+a.kill
+
+# stays the same if I run .join but not if I run .run
+
+# some globals are thread-local like $1
+/(abc)/.match "abc"
+
+t = Thread.new do
+  /(def)/.match("def")
+  puts "$1 in thread: #{$1}"
+end.join
+
+puts "$1 outside of thread #{$1}"
+t.kill
+
+# Threads have thread keys
+t = Thread.new do
+  Thread.current[:message] = 'Hello'
+end
+
+t.join
+t.kill
+
+# array of key names
+p t.keys
+puts t[:message]
+t.kill
+
+system('date')
+print '$? outside is'
+p $?
+
+t = Thread.new { system('fiesta'); print 'inside $? is:'; p $? }
+t.join
+print '$? outside is'
+p $?
+t.kill
+
+# call a system command with backticks
+
+d = `date`
+print 'date is '
+p d
+
+# you can also call system commands like this:
+
+d = %x{date}
+p d
+
+# you can use other delimeters if you want
+
+d = %x-date-
+p d
+
+# you can interpolate commands
+# ... but you should not
+
+d = 'date'
+p %x{#{d}}
+p `#{d}`
+
+# you can also use open and popen3 to communicate
+# with other programs
+
+# d = open('|cat', 'w+')
+
+# |cat indicates that we're opening another program
+# and not a file
+# d.puts 'hello world'
+# d.gets 'hello world\n'
+# d.close
