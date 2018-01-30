@@ -1,0 +1,34 @@
+- q: What are the building blocks of a container?
+  a: dockerfiles
+- q: What supports distribution of containers?
+  a: docker registories
+- q: What command will show you all running and stopped containers?
+  a: docker ps -a
+- q: What is the official word for a "stopped" container?
+  a: exited
+- q: How do you create a new docker container?
+  a: docker run
+- q: How do you save a container in an image?
+  a: docker commit <container> <file_location>
+- q: The FROM instruction specifies which base (blank) to use.
+  a: image
+- q: true/false All dockerfiles must have a FROM instruction as the first noncommemt instruction.
+  a: true
+- q: RUN instructions specify what kind of command to run inside the image?
+  a: shell
+- q: What do you need to add at the end of `docker build -t test/cowsay-dockerfile`?
+  a: .
+- q: The UFS is also sometimes called...
+  a: union mount
+- q: What command can you see the UFS implementation under Storage Driver?
+  a: docker info
+- q: What dockerfile instruction allows us to specify an executable that is used to handle any arguments passed to docker run.
+  a: ENTRYPOINT
+- q: true/false Dockerfile expects string to be in double quotes.
+  a: true
+- q: true/false you can pass a shell script path to ENTRYPOINT
+  a: true
+- q: The COPY instruction copies a file from the host to the images what?
+  a: filesystem
+- q: What option tells docker to run an image in the background?
+  a: -d

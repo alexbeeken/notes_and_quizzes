@@ -1,0 +1,41 @@
+- q: Using 0.0.0.0 does what that 127.0.0.1 doesnt do?
+  a: binds to all network interfaces
+- q: The -p 5000:5000 flag in docker run tells docker we want to forward port 5000 on the container to port 5000 on the what?
+  a: host
+- q: true/false You want to bind mount your directoy so you dont have to restart the container when changes are made.
+  a: true
+- q: With Docker we want to keep our development as similar as possible to our (blank).
+  a: production
+- q: Always set what in your Dockerfile?
+  a: USER
+- q: If an attacker gains access to the container root, he will have access to what as root?
+  a: host
+- q: -P maps a random high numbered port to each of which ports on the container?
+  a: exposed
+- q: How do you ask which ports docker is mapping to exposed ports?
+  a: docker port
+- q: true/false When you have multiple ports inside multiple containers, it's easier to let Docker map them automatically.
+  a: true
+- q: In docker-compose, a build key tells you the tag of the image or a...
+  a: Dockerfile
+- q: In docker-compose yaml, the environment key is directly analogous to what docker run option flag?
+  a: -e
+- q: In docker-compose yaml, the volumes key is directly analogous to what docker run option flag?
+  a: -v
+- q: Which docker compose instruction does this describe? "Starts all containers and aggregates their output"
+  a:
+- q: Which docker compose instruction does this describe? "builds or rebuilds any images in dockerfile"
+  a: build
+- q: Which docker compose instruction does this describe? "provides info about status of managed containers"
+  a: ps
+- q: Which docker compose instruction does this describe? "spins up a container to run a single command"
+  a: run
+- q: Which docker compose instruction does this describe? "aggregate logs for composer managed containers"
+  a: logs
+- q: Which docker compose instruction does this describe? "stop containers without removing them"
+  a: stop
+- q: Which docker compose instruction does this describe? "removes stopped containers"
+  a: rm
+- q: If you want compose to stop and recreate all containers what should you append?
+  a: --force recreate
+- q: 

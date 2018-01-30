@@ -1,0 +1,66 @@
+- q: A VM is basically a(n) (blank) of a computer.
+  a: emulation
+- q: The (blank) stands between the VM and the hardware.
+  a: hypervisor
+- q: The computer that a cointainer runs inside of is called a...
+  a: host
+- q: A VM can also be called a...
+  a: guest machine
+- q: A guest machine can run on a hosted hypervisor or what type of hypervisor?
+  a: bare-metal
+- q: true/false a traditional VM has access to hardware directly.
+  a: false
+- q: A bare-metal hypervisor interacts with computer hardware components directly or indirectly.
+  a: directly
+- q: Containers share the host systems (blank) with other containers.
+  a: kernel
+- q: true/false Docker is based on linux containers.
+  a: true
+- q: You can separate out different services to different containers.
+  a: true
+- q: What is this called? "a lightweight runtime and tooling that manages containers, images, builds, and more"
+  a: Docker Engine
+- q: What part of the Docker Engine communicates with the host computer?
+  a: Docker Daemon
+- q: What communicates with the Docker Daemon to execute commands?
+  a: Docker Client
+- q: What is used for interacting with the Docker Daemon remotely?
+  a: a REST API
+- q: Which piece of the Docker Engine are you interacting with when you run console commands?
+  a: Docker Client
+- q: Where do you write instructions to build a docker image?
+  a: Dockerfile
+- q: What is read only and built from the set of instructions in your Dockerfile?
+  a: Image
+- q: Each instruction in the Dockerfile adds a new what to the Image?
+  a: layer
+- q: What does Docker use to build images from DockerFiles?
+  a: Union File Systems
+- q: true/false Union File Systems uses a "copy on write" method.
+  a: true
+- q: What is the term for Dockers ability to only update things affected by layers?
+  a: layer segregation
+- q: What are the "data" parts of the container?
+  a: volumes
+- q: Volumes are initiated when a container is what?
+  a: created
+- q: What provides containers with their own view of the underlying linux system?
+  a: namespaces
+- q: What namespace does this describe "Provides a container with its own view of the network stack of the system"?
+  a: NET
+- q: What namespace sdoes this describe "Gives a container its own view of the “mounts” on the system."?
+  a: MNT
+- q: What namespace sdoes this describe "It allows a process to identify system identifiers (i.e. hostname, domainname, etc.)."?
+  a: UTS
+- q: What does the namespace UTS stand for?
+  a: Unix Timesharing System
+- q: What namespace does this describe? "responsible for isolating IPC resources between processes running inside each container."
+  a: IPC
+- q: What does the namespace IPC stand for?
+  a: inter process comunication
+- q: What namespace does this describe? "used to isolate users within each container."
+  a: USER
+- q: Dockers uses different (blanks) to create the container?
+  a: namespaces
+- q: What does this describe? "a Linux kernel feature that isolates, prioritizes, and accounts for the resource usage (CPU, memory, disk I/O, network, etc.) of a set of processes."
+  a: control groups

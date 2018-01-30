@@ -1,0 +1,31 @@
+
+- q: What option flag links two containers?
+  a: --link
+- q: What file does Docker edit to link containers?
+  a: /etc/hosts
+- q: Which file do you use to exclude sensitive or unneeded files?
+  a: .dockerignore
+- q: In the dockerfile, each layer creates a new (blank)?
+  a: image
+- q: In the dockerfile, intermediate layer images are what between layers?
+  a: deleted
+- q: What option keeps intermediate layer images in the dockerfile?
+  a: --rm=false
+- q: To see full set of layers that make up an image, run what command?
+  a: docker history
+- q: Docker will cache any files used in COPY or ADD unless what metric changes?
+  a: checksum
+- q: What option invalidates the cache in a docker build?
+  a: --no-cache
+- q: true/false Docker links are static, they arent updated if linked container is replaced.
+  a: true
+- q: true/false Linked containers must be restarted before master container, i.e. no bidirectional links.
+  a: true
+- q: true/false Docker volumes are part of the UFS
+  a: false
+- q: Docker volumes stored on host are not just mounted they are (blank) mounted.
+  a: bind
+- q: What is the name for containers whose sole purpose is to share data between other containers?
+  a: data containers
+- q: Default true flags are set to (blank) if unspecified.
+  a: true
