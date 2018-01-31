@@ -1,0 +1,90 @@
+- q: The rules of scope govern the visibility of what?
+  a: variables
+- q: How many objects can play the role of self at any moment?
+  a: one
+- q: What is basically "rules governing the call of methods based on what self is"?
+  a: method access
+- q: Self can exist in three contexts class-definition blocks, module-definition blocks and (blank).
+  a: method-definition blocks
+- q: What object is self at the top level of your program?
+  a: main
+- q: What object is self inside of a class definition?
+  a: class
+- q: What object is self inside of a module definition?
+  a: module
+- q: What object is self inside of a top level method definition?
+  a: whatever it was in the calling context
+- q: What object is self inside of a class instance method definition?
+  a: the instance of the class
+- q: What object is self inside of a module instance method definition?
+  a: the instance of the parent class
+- q: What object is self inside of a class method definition?
+  a: class
+- q: What object is self inside of a method definition on a specific object? (def obj.method_name)
+  a: object
+- q: What refers to the context that exists outside of any class or module definition?
+  a: top level
+- q: true/false Ruby will interpret use of main as regular variable or method usage.
+  a: true
+- q: true/false can you assign main to a variable?
+  a: true
+- q: true/false Defining class methods with self.x makes it easier to change the name of the class later
+  a: true
+- q: If a subclass calls a super's class method and it uses self, self will be which one?
+  a: subclass
+- q: You can omit the dot of a method call if the receiver is what?
+  a: self
+- q: What takes precedence if you give a variable and a method the same name in a context in ruby?
+  a: variable
+- q: true/false the most common use of default receiver method calls is one instance method calling another.
+  a: true
+- q: true/false you can omit the self. when using the default receiver for a setter method such as name=
+  a: false
+- q: What is the scope that covers the entire program?
+  a: global
+- q: true/false global variables never go out of scope.
+  a: true
+- q: Which built in global contains the name of the startup file?
+  a: $0
+- q: Which built in global contains the directories that make up the path?
+  a: "$:"
+- q: Which built in global contains the process ID of the Ruby process?
+  a: $$
+- q: Where can you find info on all of the globals?
+  a: English.rb
+- q: true/false when you start a definition block, you start a new local scope.
+  a: true
+- q: true/false Class variables (@@var) are only class scoped.
+  a: false
+- q: What is the name for the thing that is intended to provide a storage mechanism between a class and an instance of that class?
+  a: class variable
+- q: true/false Globals are immutable.
+  a: false
+- q: true/false overriding a class variable in a child class doesnt overwrite the parent.
+  a: false
+- q: true/false When subclassing, class methods' instance variables get reinstantiated.
+  a: true
+- q: The main business of an object is to respond to what?
+  a: messages
+- q: There are private, public and what type of object methods?
+  a: protected
+- q: true/false You can pass a list of method names as an argument to private.
+  a: true
+- q: true/false You can set a private setter with private :setter_name=
+  a: true
+- q: true/false protected methods can only be called if self is an instance of the same class or an ancestor or descendant of the class.
+  a: true
+- q: main is an instance of what object?
+  a: Object
+- q: A method you define at the top level is stored as a private instance method of which class?
+  a: Object
+- q: true/false Top level methods can only be called bare word style.
+  a: true
+- q: true/false Private instance methods of Object can be called from anywhere in your code.
+  a: true
+- q: true/false Object lies in the method lookup of every single class.
+  a: true
+- q: Puts and print are built in private instance methods of what class?
+  a: Kernel
+- q: What is the default receiver if there is no explicit reciever?
+  a: self

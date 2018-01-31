@@ -1,6 +1,5 @@
 require 'yaml'
-
-TOPICS = %w[ruby rails history rails rails2 ruby ruby2 sql threads proc pry ruby3]
+require 'find'
 
 def user_message(&block)
   block.call
@@ -24,17 +23,24 @@ def ask_questions(questions)
   incorrect
 end
 
+yaml_file_paths = []
+Find.find('./') do |path|
+  yaml_file_paths << path if path =~ /.*\.yaml$/
+end
+quiz_names = yaml_file_paths.map { |q| q.split("/").last }
+
 topic = nil
 user_message do
   puts 'Interview Practice!'
   puts 'choose topic'
-  TOPICS.each_with_index do |topic, index|
+  quiz_names.each_with_index do |topic, index|
     puts "#{index + 1} - #{topic}"
   end
-  topic = TOPICS[gets.to_i - 1]
+  print "make your selection: "
+  topic = yaml_file_paths[gets.to_i - 1]
 end
 
-questions = YAML.load_file("#{topic}.yaml").shuffle
+questions = YAML.load_file(topic).shuffle
 incorrect = ask_questions(questions)
 
 if incorrect.length > 0
