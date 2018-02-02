@@ -1,0 +1,41 @@
+- q: Modules are bundles of what and what?
+  a: methods and constants
+- q: true/false Class is a subclass of Module
+  a: true
+- q: true/false You can mixin more than one module.
+  a: true
+- q: What does LIFO stand for?
+  a: last in first out
+- q: true/false The stack data structure implements LIFO
+  a: true
+- q: What is the operator for "raise to a power equals"
+  a: **=
+- q: Pop takes the first element from which part of the array? (beginning/end)
+  a: end
+- q: Require and load take what type of arguments?
+  a: string
+- q: true/false Include takes the name of a module as its argument.
+  a: true
+- q: true/false objects dont "have" methods, they search for them in classes and modules
+  a: true
+- q: During method lookup, an object will look in it's class for the method and then search in where?
+  a: module
+- q: true/false Kernel is a module that Object mixes in.
+  a: true
+- q: Object, BasicObjet and what module are written in the C language?
+  a: Kernel
+- q: true/false objects look for methods in their class's mixed in module in reverse order of inclusion.
+  a: true
+- q: If you define a method twice, which one takes precedence? first or second
+  a: second
+- q: true/false During method lookup, the first matching method name will be the "winner".
+  a: true
+- q: true/false If you include a module twice, the second wont have any effect on the method lookup path.
+  a: true
+- q: The super keyword calls the next method up in the...
+  a: lookup path
+- q: Modules do not have this one thing that classes have, what is it?
+  a: instances
+- q: Classes can only have one super but can include many whats?
+  a: modules
+- q: 
