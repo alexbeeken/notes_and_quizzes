@@ -1,0 +1,7 @@
+- q: true/false a template is needed when just a piece at the center of your code needs to vary.
+  a: true
+- q: The parent class of the different "templates" in the template method are considered what?
+  a: abstract
+- q: Methods that can be overwridden from the abstract class are called what?
+  a: hooks
+- q: 
