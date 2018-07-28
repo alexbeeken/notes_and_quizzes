@@ -9,7 +9,7 @@
 - q: true/false The stack data structure implements LIFO
   a: true
 - q: What is the operator for "raise to a power equals"
-  a: **=
+  a: "**="
 - q: Pop takes the first element from which part of the array? (beginning/end)
   a: end
 - q: Require and load take what type of arguments?
