@@ -1,0 +1,4 @@
+- q: const lets you mutate objects like object literals and arrays
+  a: true
+- q: you can overwrite an existing object or array assigned with const
+  a: false
