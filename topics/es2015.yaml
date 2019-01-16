@@ -2,3 +2,9 @@
   a: true
 - q: you can overwrite an existing object or array assigned with const
   a: false
+- q: let should be used when the value of the variable is changed in the code
+  a: true
+- q: let is block scoped
+  a: true
+- q: var should be used in for loops
+  a: false
