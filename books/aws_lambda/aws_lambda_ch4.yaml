@@ -1,0 +1,7 @@
+- q: What is it called when you identify who the user is?
+  a: authentication
+- q: What is it called when you check if the user has the permissions needed to perform an action?
+  a: authorization
+- q: What is the security jargon for regenerating credentials?
+  a: rotating
+- q: 

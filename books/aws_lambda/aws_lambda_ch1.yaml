@@ -1,0 +1,36 @@
+- q: With AWS Lambda you pay per hundreds of milliseconds of execution time based on memory and number of what?
+  a: invocations
+- q: Execution time costs grow how with memory?
+  a: linearly
+- q: There's no charge for the first how many invocations?
+  a: million
+- q: When you call a function with Lambda you provide what two things? context and
+  a: event
+- q: What is used to send input parameters in json format?
+  a: event
+- q: What is used by the service to describe execution environment and how the event is processed?
+  a: context
+- q: What invocation type is essentially "synchronous"?
+  a: RequestResponse
+- q: What is returned immediately from a RequestResponse type?
+  a: the result
+- q: What isn't returned immediately from an Event invocation type?
+  a: the result
+- q: What invocation type is essentially "asynchronous"?
+  a: Event
+- q: part of the philosophy of serverless is that top-down orchestration isn't as good as bottom up what?
+  a: choreography
+- q: You can chain functions and subscribe them to what?
+  a: events
+- q: What type of file is an example of an event driven application?
+  a: spreadsheet
+- q: Event driven application programming is also called what?
+  a: reactive programming
+- q: What should you use to handle authentication with AWS Lambda?
+  a: Amazon Cognito
+- q: Amazon Cognito provides an interface to AWS Identity and what other service?
+  a: AWS Security Token Service
+- q: What do you use in AWS to handle different routes?
+  a: Amazon API Gateway
+- q: What does the API Gateway do to AWS Lambda and api usage?
+  a: decouples it

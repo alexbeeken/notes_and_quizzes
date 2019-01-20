@@ -62,8 +62,8 @@
   a: local_variables
 - q: What method gives you the global_variables of a scope?
   a: global_variables
-- q: What short hand global is the library load path? (long form: $LOAD_PATH)
-  a: $:
+- q: What short hand global is the library load path? (long form- $LOAD_PATH)
+  a: $
 - q: What global is an object with match data based on most recent pattern-matching operation?
   a: $~
 - q: What global shows the name of the file which the current program is executed?

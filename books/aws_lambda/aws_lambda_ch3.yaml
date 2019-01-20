@@ -1,0 +1,32 @@
+- q: What service does lambda integrate with to offer api functionality?
+  a: Amazon API Gateway
+- q: It's possible to build RESTful apis with AWS labmda (T/F)
+  a: T
+- q: What defines the path between the domain and resource?
+  a: stage
+- q: What is best to use with an amazon default template?
+  a: model
+- q: What is easier to to transform responses that changing backend code?
+  a: integration response mapping
+- q: What template language does the Amazon API Gateway use?
+  a: Velocity Template Language
+- q: What does the API Gateway interpret {username} as?
+  a: parameter
+- q: What is the API gateway equivalent of a child resource?
+  a: dependent resource
+- q: Adding what to the end of a parameter makes it a catch all?
+  a: +
+- q: What can you use to get the IP address of the caller?
+  a: $context.identity.sourceIp
+- q: In an integration request mapping, what variable can return useful information about the web API?
+  a: $context
+- q: What can you use to get the current stage of the caller?
+  a: $context.stage
+- q: It is possible to support multiple content-types, depending on the request. (T/F)
+  a: T
+- q: What is a tool to help make API Gateway and Lambda's interaction automatically setup?
+  a: Lambda proxy integration template
+- q: In general is it best to put everything business related into the actual lambda function? (T/F)
+  a: T
+- q: In general is it best to put everything request related into the integration? (T/F)
+  a: T

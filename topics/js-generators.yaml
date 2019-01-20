@@ -1,0 +1,31 @@
+- q: t/f can you declare generators using arrow functions?
+  a: f
+- q: is this valid generator syntax? function * generator () {}
+  a: t
+- q: is this valid generator syntax? function* generator () {}
+  a: t
+- q: is this valid generator syntax? function *generator () {}
+  a: t 
+- q: is this valid generator syntax? let generator = function * () {}
+  a: t 
+- q: is this valid generator syntax? let generator = function* () {}
+  a: t
+- q: is this valid generator syntax? let generator = function *() {}
+  a: t
+- q: is this valid generator syntax? let generator = *() => {}
+  a: f
+- q: is this valid generator syntax? let generator = ()* => {}
+  a: f
+- q: is this valid generator syntax? let generator = (*) => {}
+  a: f
+- q: yield is just the same thing as return 
+  a: f
+- q: generators return an object with two properties. value and...
+  a: done
+- q: the done property is of type...
+  a: boolean
+- q: t/f return will also return the tuple 
+  a: t
+- q: t/f using return instead of yield will start the function back at its place when using next()
+  a: f
+

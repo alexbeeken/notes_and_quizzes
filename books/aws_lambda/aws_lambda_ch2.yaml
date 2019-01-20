@@ -1,0 +1,32 @@
+- q: Logic bound to "outside" events are responding to whom?
+  a: client
+- q: Logic bound to "inside" events are defining what between resources?
+  a: relationships
+- q: What does the code start with before the function?
+  a: initialization
+- q: You should put code in the initialization that be executed how many times?
+  a: once
+- q: Initialization code can be reused across multiple functions? (T/F)
+  a: T
+- q: Initialization code is run when what is started up?
+  a: container
+- q: What handles console events in Lambda since it is headless?
+  a: CloudWatch
+- q: In Node.js you end everything with what function?
+  a: callback
+- q: What allows you to specify which functions are called by the lambda?
+  a: handler
+- q: What is the default handler value for Nodejs?
+  a: index.handler
+- q: AWS VPC (virtual private cloud) keeps different functions what?
+  a: logically separated
+- q: the first invocation is going to be slower/faster than the ones after?
+  a: slower
+- q: What command do you use to invoke a lambda function from aws cli?
+  a: aws lambda
+- q: What does a FunctionError "Unhandled" probably indicate is broken with your payload?
+  a: formatting
+- q: You create a lambda function from the aws cli. (T/F)
+  a: T
+- q: You can change permissions from the aws cli. (T/F)
+  a: T
