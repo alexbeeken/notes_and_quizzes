@@ -1,0 +1,30 @@
+- q: Linux processes communicate with each other using what?
+  a: signals
+- q: A process may choose to act on or (blank) a signal it receives?
+  a: ignore
+- q: What signal is described as "hangs up"?
+  a: HUP
+- q: What signal is described as "Interrupts"? 
+  a: INT
+- q: What signal is described as "stops running"? 
+  a: QUIT
+- q: What signal is described as "Unconditionally terminates"? 
+  a: KILL
+- q: What signal is described as "Produces segment violation"? 
+  a: SEGV
+- q: What signal is described as "Terminates if possible"? 
+  a: TERM
+- q: What signal is described as "Stops unconditionally but doesnt terminate"? 
+  a: STOP
+- q: What signal is described as "Stops or pauses, but continues to run in background"? 
+  a: TSTP
+- q: What signal is described as "Resumes execution after STOP or TSTP"?
+  a: CONT
+- q: What signal does the kill command send by default to the process specified?
+  a: TERM
+- q: In order to send a process a signal, you must be the owner of the process or logged in as...
+  a: root
+- q: What option to 'kill' allows you to specify the signal? 
+  a: -s
+- q: What command can let you kill a bunch of processes and should be used with caution?
+  a: killall

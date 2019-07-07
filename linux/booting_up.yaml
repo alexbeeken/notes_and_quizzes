@@ -1,0 +1,62 @@
+- q: When using systemd, what is the pid of systemd?
+  a: "1"
+- q: systemd is considered to exist in 'user space' or 'kernel space'?
+  a: user space
+- q: system calls are considered to exist in 'user space' or 'kernel space'?
+  a: kernel space
+- q: The C standard library is considered to exist in 'user space' or 'kernel space'?
+  a: user space
+- q: The windowing system is considered to exist in 'user space' or 'kernel space'?
+  a: user space
+- q: The Network subsystem is considered to exist in 'user space' or 'kernel space'?
+  a: kernel space
+- q: What three letter acronym does systemd seem to be replacing?
+  a: BSD
+- q: The biggest advantage that systemd has over previous init solutions is...
+  a: parallization
+- q: The biggest criticism of systemd are that it's too monolithic and enforces unhealthy conformifity. (true/false)
+  a: "true"
+- q: What does systemd "stand for"? (not really an acronym but you know what I mean)
+  a: system daemon
+- q: This runs first and performs startup tasks specific to the actual hardware platform
+  a: BIOS 
+- q: What runs after the BIOS finds it and executes it from hardware? 
+  a: boot loader
+- q: The boot loader loads what into memory?
+  a: kernel
+- q: What function does kernel call to start itself?
+  a: start_kernel()
+- q: What starts the init process and brings us into user space?
+  a: kernel
+- q: What is the most common init process right now? (2019)
+  a: systemd
+- q: Once the init process has setup user space services what is setup next (in most distributions for home use)
+  a: desktop environment
+- q: When you shutdown a linux system, which process is asked to close down all user space functionality?
+  a: init
+- q: GRUB is an example of a...
+  a: boot loader
+- q: During the first stage of kernel loading, the kernel image is (blanked) if necessary? 
+  a: decompressed
+- q: start_kernel() is called before or after decompression? 
+  a: after
+- q: In systemd, systemd is a daemon that manages all other... 
+  a: daemons
+- q: All daemons are what type of processes?
+  a: background processes
+- q: BIOS stands for...
+  a: basic input output system
+- q: What does the BIOS search for in the 1st sector of the primary hard drive? (acronym)
+  a: MBR
+- q: Where does the BIOS load the master boot record once it is found?
+  a: RAM
+- q: How big is the MBR?
+  a: "512 bytes"
+- q: GRUB looks for what to execute?
+  a: kernel
+
+
+
+
+
+ 

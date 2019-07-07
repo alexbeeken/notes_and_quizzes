@@ -1,0 +1,70 @@
+- q: in the /etc/passwd file, the user ID has its default shell program listed in what field number?
+  a: "7"
+- q: What is the normal directory where bash is run?
+  a: /bin/bash
+- q: What is the common name for what lives in /bin/sh
+  a: default system shell
+- q: What is a shell process that owns another shell process called?
+  a: parent
+- q: A child shell session can also be called a...
+  a: subshell
+- q: You can monitor subshell ownership visually with what argument to ps -ax?
+  a: --forest
+- q: What argument to bash will read a string and run the commands therein? 
+  a: -c
+- q: What argment to bash read commands from the standard input?
+  a: -s
+- q: What character (not the name of it) allows you to run multiple commands one after another?
+  a: ;
+- q: Wrapping a group of commands in parenthesis turns it into a...
+  a: process list
+- q: A process list creates a what to execute it's commands?
+  a: subshell
+- q: What environment variable tells you information about what subshell you are currently in? (omit the "$")
+  a: BASH_SUBSHELL
+- q: Can you create grandchild subshells by using parentheses inside of parentheses?
+  a: true 
+- q: What is the mode called when you run a process without losing your CLI for other use?
+  a: background
+- q: What can you append to the end of a command to run it in background mode?
+  a: "&"
+- q: What command will display all the processes running in the background?
+  a: jobs
+- q: (<subshell commands>)& can be used to run a whole series of subshell commands in the background (true/false)
+  a: "true"
+- q: What command does co-processing?
+  a: coproc
+- q: The default name for a coproc process is...
+  a: COPROC
+- q: The main advantage of coproc is that it allows you to send/receive information to the running process. (true/false)
+  a: true
+- q: The disadvantage to spawning subshells is that they are...
+  a: slow
+- q: These commands are also sometimes called filesystem commands.
+  a: built-in commands
+- q: Built-In commands exist outside of the shell program. (true/false)
+  a: true
+- q: The ps command is an external or internal command?
+  a: external
+- q: You can find out if a command is external or internal by running, "where" or what command?
+  a: type
+- q: When an external command is executed it creates a child process, otherwise known as...
+  a: forking
+- q: What is a disadvantage to external commands due to having to setup its environemnt?
+  a: expensive
+- q: Which type of commands do not run in a child process?
+  a: internal 
+- q: Built-in commands are added to the shell program when it is...
+  a: compiled
+- q: Some commands can be both internal and external (true/false)
+  a: true
+- q: To use the external version of a shell command, it's best to reference it's...
+  a: file
+- q: What command recalls your shell history?
+  a: history 
+- q: What environment variables determineds the size of the commandhistory?
+  a: HISTSIZE
+- q: What command runs the last entry in your history?
+  a: "!!"
+- q: Which history file is read when the terminal first opens?
+  a: .bash_history

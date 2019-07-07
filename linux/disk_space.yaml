@@ -1,0 +1,50 @@
+- q: Linux combines all media disks into a single...
+  a: virtual directory
+- q: When you place a disk into the virtual directory, it is called...
+  a: mounting
+- q: Removable media is usually mounted and unmounted...
+  a: automatically
+- q: What command do you use to mount a drive?
+  a: mount
+- q: What command do you use to display a list of media devices currently mounted
+  a: mount
+- q: vfat is an example of a format of what?
+  a: filesystem
+- q: .iso9660 is the filesystem type for what media?
+  a: CDROM
+- q: which helpful parameter to mount simulates a mount but doesn't actually do it? 
+  a: -f
+- q: which parameter to mount, mounts the device as read only?
+  a: -r
+- q: what command do you use to unmount media?
+  a: umount
+- q: What command lists each mounted filesystems that contain data? 
+  a: df
+- q: What option to df makes it more "human readable"?
+  a: -h
+- q: What command shows disk usage for each specified directory?
+  a: du
+- q: What option to du produces a grand total of all the files listed?
+  a: -c
+- q: What command can sort a file according to language rules?
+  a: sort
+- q: By default, sort will sort which line first in a file? 100 or 2
+  a: 100
+- q: Which parameter to sort will tell it to sort numbers as integers instead of strings?
+  a: -n
+- q: Which parameter to sort ignores leading blanks?
+  a: -b
+- q: Which parameter to sort reverses the order?
+  a: -r
+- q: Which argument to grep can return just a count of the found lines?
+  a: -c
+- q: Which argument to grep can append line numbers to matches?
+  a: -n
+- q: Which command is an offshoot of grep that allows for POSIX extended regular expressions?
+  a: egrep
+- q: what is the most popular compression tool on linux right now? (2019)
+  a: gzip
+- q: Which command will display the contents of gzipped files?
+  a: gzcat
+- q: Which command/format was originally used to write files to a tape device for archiving?
+  a: tar

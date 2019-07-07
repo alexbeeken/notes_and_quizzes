@@ -11,7 +11,7 @@ def ask_questions(questions)
   questions.each do |question|
     user_message do
       puts question['q']
-      answer = gets.gsub!("\n", '')
+      answer = STDIN.gets.chomp
       if answer == question['a'].to_s
         puts 'correct'
       else
@@ -25,7 +25,11 @@ end
 
 yaml_file_paths = []
 Find.find('./') do |path|
-  yaml_file_paths << path if path =~ /.*\.yaml$/
+  if ARGV[0]
+    yaml_file_paths << path if path.include?(ARGV[0]) && path =~ /.*\.yaml$/
+  else
+    yaml_file_paths << path if path =~ /.*\.yaml$/
+  end
 end
 quiz_names = yaml_file_paths.map { |q| q.split("/").last }
 
@@ -37,11 +41,13 @@ user_message do
     puts "#{index + 1} - #{topic}"
   end
   print "make your selection: "
-  topic = yaml_file_paths[gets.to_i - 1]
+  number = STDIN.gets.chomp.to_i
+  topic = yaml_file_paths[number - 1]
 end
 
-questions = YAML.load_file(topic).shuffle
-incorrect = ask_questions(questions)
+questions = YAML.load_file(topic)
+raise "no questions in the file!" unless questions
+incorrect = ask_questions(questions.shuffle)
 
 if incorrect.length > 0
   user_message do
