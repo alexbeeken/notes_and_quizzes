@@ -22,7 +22,7 @@
   a: subshell
 - q: What environment variable tells you information about what subshell you are currently in? (omit the "$")
   a: BASH_SUBSHELL
-- q: Can you create grandchild subshells by using parentheses inside of parentheses?
+- q: You create grandchild subshells by using parentheses inside of parentheses. (true/false)
   a: true 
 - q: What is the mode called when you run a process without losing your CLI for other use?
   a: background
@@ -41,14 +41,14 @@
 - q: The disadvantage to spawning subshells is that they are...
   a: slow
 - q: These commands are also sometimes called filesystem commands.
-  a: built-in commands
+  a: built-in
 - q: Built-In commands exist outside of the shell program. (true/false)
   a: true
 - q: The ps command is an external or internal command?
   a: external
 - q: You can find out if a command is external or internal by running, "where" or what command?
   a: type
-- q: When an external command is executed it creates a child process, otherwise known as...
+- q: When an external command is executed it creates a child process, in a process otherwise known as...
   a: forking
 - q: What is a disadvantage to external commands due to having to setup its environemnt?
   a: expensive
@@ -59,10 +59,10 @@
 - q: Some commands can be both internal and external (true/false)
   a: true
 - q: To use the external version of a shell command, it's best to reference it's...
-  a: file
+  a: path
 - q: What command recalls your shell history?
   a: history 
-- q: What environment variables determineds the size of the commandhistory?
+- q: What environment variables determines the size of the command history?
   a: HISTSIZE
 - q: What command runs the last entry in your history?
   a: "!!"
