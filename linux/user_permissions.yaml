@@ -12,7 +12,7 @@
   a: 8
 - q: What special file does Linux use to match the login name to a corresponding UID?
   a: /etc/passwd
-- q: What user is always assigned a UID of 0? (hint: trees)
+- q: "What user is always assigned a UID of 0? (hint: trees)"
   a: root
 - q: What is the name for users that Linux creates who aren't actual users?
   a: system accounts
@@ -26,19 +26,19 @@
   a: 500
 - q: (true/false) some services require specific UIDs to work properly.
   a: true
-- q: What column number (starting at one) of each row in the /etc/passwd is desrcibed as: login username
+- q: "What column number (starting at one) of each row in the /etc/passwd is desrcibed as: login username"
   a: 1
-- q: What column number (starting at one) of each row in the /etc/passwd is desrcibed as: password for the user (x if PAM is users)
+- q: "What column number (starting at one) of each row in the /etc/passwd is desrcibed as: password for the user (x if PAM is users)"
   a: 2
-- q: What column number (starting at one) of each row in the /etc/passwd is desrcibed as: numerical UID of the user account
+- q: "What column number (starting at one) of each row in the /etc/passwd is desrcibed as: numerical UID of the user account"
   a: 3
-- q: What column number (starting at one) of each row in the /etc/passwd is desrcibed as: numerical group ID (GID) of the user account
+- q: "What column number (starting at one) of each row in the /etc/passwd is desrcibed as: numerical group ID (GID) of the user account"
   a: 4
-- q: What column number (starting at one) of each row in the /etc/passwd is desrcibed as: a text description of the user account (comment field)
+- q: "What column number (starting at one) of each row in the /etc/passwd is desrcibed as: a text description of the user account (comment field)"
   a: 5
-- q: What column number (starting at one) of each row in the /etc/passwd is desrcibed as: location of this user's $HOME
+- q: "What column number (starting at one) of each row in the /etc/passwd is desrcibed as: location of this user's $HOME"
   a: 6
-- q: What column number (starting at one) of each row in the /etc/passwd is desrcibed as: default shell for this user
+- q: "What column number (starting at one) of each row in the /etc/passwd is desrcibed as: default shell for this user"
   a: 7
 - q: (true/false) /etc/passwd used to contain an encrypted version of the users password.
   a: true
