@@ -1,0 +1,94 @@
+- q: (true/false) Linux follows the Unix method of file permissions.
+  a: true
+- q: The core of the Linux security system is the...
+  a: user account
+- q: User permissions are often tracked using a...
+  a: user id
+- q: (true/false) The user id or UID is a unique identifying integer for the user.
+  a: true
+- q: You don't login to Linux with the UID, you use the...
+  a: login name
+- q: What is the maximum number of characters for a login name? (as an integer, not spelled out)
+  a: 8
+- q: What special file does Linux use to match the login name to a corresponding UID?
+  a: /etc/passwd
+- q: What user is always assigned a UID of 0? (hint: trees)
+  a: root
+- q: What is the name for users that Linux creates who aren't actual users?
+  a: system accounts
+- q: What is the name for special accounts that services running on the system use to gain access to resources on the system?
+  a: system accounts
+- q: (true/false) All services that run in background mode need to be logged in to the Linux system under a system user account.
+  a: true
+- q: Before system accounts, services would run using what account?
+  a: root
+- q: Linux reserves all UIDs under what number for system accounts?
+  a: 500
+- q: (true/false) some services require specific UIDs to work properly.
+  a: true
+- q: What column number (starting at one) of each row in the /etc/passwd is desrcibed as: login username
+  a: 1
+- q: What column number (starting at one) of each row in the /etc/passwd is desrcibed as: password for the user (x if PAM is users)
+  a: 2
+- q: What column number (starting at one) of each row in the /etc/passwd is desrcibed as: numerical UID of the user account
+  a: 3
+- q: What column number (starting at one) of each row in the /etc/passwd is desrcibed as: numerical group ID (GID) of the user account
+  a: 4
+- q: What column number (starting at one) of each row in the /etc/passwd is desrcibed as: a text description of the user account (comment field)
+  a: 5
+- q: What column number (starting at one) of each row in the /etc/passwd is desrcibed as: location of this user's $HOME
+  a: 6
+- q: What column number (starting at one) of each row in the /etc/passwd is desrcibed as: default shell for this user
+  a: 7
+- q: (true/false) /etc/passwd used to contain an encrypted version of the users password.
+  a: true
+- q: Where do non-PAM using linux machines store passwords?
+  a: /etc/shadow
+- q: (true/false) only special programs are allowed to access /etc/shadow.   
+  a: true
+- q: (true/false) the /etc/passwd file is a standard text file and you can use an editor to perform all the standard user modifications there?
+  a: true
+- q: (true/false) is the /etc/passwd file is corrupted, everybody will be able to login to the machine
+  a: true
+- q: What is the primary tool for adding a user to your system?
+  a: useradd
+- q: Where are the system defaults set for the useradd command?
+  a: /etc/default/useradd
+- q: To see the system default values you can run useradd with what parameter?
+  a: -D
+- q: Which useradd default variable defines whether or not a user will be disabled when the password expires?
+  a: INACTIVE
+- q: Which useradd default variable sets a date when the user expires?
+  a: EXPIRE
+- q: What useradd default variable contains a dir that will be copied to the new users home path?
+  a: SKEL
+- q: What parameter to useradd defines an expiration date?
+  a: -e
+- q: What parameter to useradd specifies number of days after a password expires that the account will become inactive?
+  a: -f
+- q: What parameter to useradd specifies the group or GID of the user's login
+  a: -G
+- q: What parameter to useradd specifies that this user is a system account?
+  a: -r
+- q: What command removes a user from the system?
+  a: userdel
+- q: What parameter to userdel deletes their home directory and their mail directory?
+  a: -r
+- q: What command changes the password for an existing user?
+  a: passwd
+- q: What command edits user fields and/or specifies a primary/secondary group?
+  a: usermod
+- q: What command changes a user's password expiration date?
+  a: chage
+- q: What command changes a users default shell?
+  a: chsh
+- q: What parameter to usermod locks the user so they cannot login?
+  a: -L
+- q: What parameter to usermod unlocks the user they can login again?
+  a: -U
+- q: If you just use passwd by itself, whose password does it change?
+  a: yours
+- q: What command allows you to easily find information about users on your system?
+  a: finger
+- q: (true/false) finger is disabled by many admins for security reasons
+  a: true

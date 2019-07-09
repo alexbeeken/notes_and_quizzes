@@ -1,0 +1,90 @@
+- q: (true/false) Group permissions allow users to share a common set of permissions for an object on the system.
+  a: true
+- q: Some distributions create one group for one users and some create one for...
+  a: all users
+- q: Each group has a unique...
+  a: GID
+- q: Group information is stored in...
+  a: /etc/group
+- q: In the /etc/group file, which column number can be described as: group name
+  a: 1 
+- q: In the /etc/group file, which column number can be described as: group password
+  a: 2
+- q: In the /etc/group file, which column number can be described as: GID
+  a: 3
+- q: In the /etc/group file, which column number can be described as: list of user accounts that belong to that group
+  a: 4
+- q: What can allow a non-group member to become a member temporarily (for example to run a program)?
+  a: group password
+- q: What command should you use instead of manually adding users to /etc/group?
+  a: usermod
+- q: What command do you use to create new groups on a linux system?
+  a: groupadd
+- q: (true/false) the groupadd command provides options for adding a user to a group.
+  a: false
+- q: (true/false) the groupadd command creates a group without any users in it.
+  a: true
+- q: Which parameter to usermod replaces the default group for the user account?
+  a: -g
+- q: Which parameter to usermod assigns the user to the specified group without replacing the default?
+  a: -G
+- q: Which command allows you to change information about a group (although there isn't much to change)
+  a: groupmod
+- q: The first char in this permissions string: -rw-rw-r-- tells you that this is what kind of listing?
+  a: file
+- q: The first char in this permissions string: drw-rw-r-- tells you that this is what kind of listing?
+  a: directory
+- q: The first char in this permissions string: lrw-rw-r-- tells you that this is what kind of listing?
+  a: link
+- q: The first char in this permissions string: crw-rw-r-- tells you that this is what kind of listing?
+  a: character device
+- q: The first char in this permissions string: brw-rw-r-- tells you that this is what kind of listing?
+  a: block device
+- q: The first char in this permissions string: nrw-rw-r-- tells you that this is what kind of listing?
+  a: network device
+- q: What is the first grouping of permissions for in a permissions string?
+  a: owner
+- q: What is the second grouping of permissions for in a permissions string?
+  a: group
+- q: What is the third grouping of permissions for in a permissions string?
+  a: everyone
+- q: What determines the default permissions for files created on the system?
+  a: umask
+- q: What command allows you to change the umask?
+  a: umask
+- q: Security settings sometimes use a shortened version of the -rwx-rw-r-- notation called...
+  a: octal mode
+- q: What is --- in octal mode? 
+  a: 0
+- q: What is --x in octal mode? 
+  a: 1
+- q: What is -w- in octal mode? 
+  a: 2
+- q: What is -wx in octal mode? 
+  a: 3
+- q: What is r-- in octal mode? 
+  a: 4
+- q: What is r-w in octal mode? 
+  a: 5
+- q: What is rw- in octal mode? 
+  a: 6
+- q: What is rwx in octal mode? 
+  a: 7
+- q: What is rw-rw-r-- in octal mode?
+  a: 664
+- q: What is the default permission mode for a file? (octal)
+  a: 666
+- q: what is the default permission mode for a directory? (octal)
+  a: 777
+- q: Where is the umask value normally set?
+  a: /etc/profile
+- q: What does a umask of 022 set a newly created file's permissions to? (octal)
+  a: 644
+- q: What does a umask of 026 set a newly created file's permissions to? (octal)
+  a: 640
+- q: What is the normal permission notation for the octal mode 640? (for a directory)
+  a: drw-r-----
+- q: What does a umask of 026 set a newly created directory's permissions to? (octal)
+  a: 751
+- q: What command allows you to change security settings of files and dirs?
+  a: chmod 
