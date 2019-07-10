@@ -88,3 +88,25 @@
   a: 751
 - q: What command allows you to change security settings of files and dirs?
   a: chmod 
+- q: When using chmod and non-octal notation you can add permissions to users using (blank)+rwx
+  a: u
+- q: When using chmod and non-octal notation you can add permissions to groups using (blank)+rwx
+  a: g
+- q: When using chmod and non-octal notation you can add permissions to others using (blank)+rwx
+  a: o
+- q: What would you pass as an argument here to remove the executable permission for the owner of newfile? chmod (blank) newfile
+  a: u-x
+- q: What would you pass as an argument here to make the owning user alex and the default group workers the owner of newfile? chown (blank) newfile
+  a: alex.workers
+- q: What would you pass as an argument here to just make the default group workers the owner of newfile? chown (blank) newfile
+  a: .workers
+- q: What would you pass as an argument here to make the owning user alex for newfile? chown (blank) newfile
+  a: alex
+- q: (true/false) only the root user can change the owner of a file.
+  a: true
+- q: (true/false) only the root user can change the default group of a file.
+  a: false
+- q: (true/false) any non-root user may change the default group of a file as long as that user belongs to both groups involved.
+  a: true
+ 
+
