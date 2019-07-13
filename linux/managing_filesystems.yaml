@@ -1,0 +1,34 @@
+- q: What is the name of the original linux filesystem? (long version)
+  a: extended filesystem
+- q: What is the name of the original linux filesystem? (short version)
+  a: ext
+- q: What does ext use to keep track of files in the filesystem?
+  a: inodes
+- q: What keeps track of inodes for each physical device?
+  a: inode table
+- q: What is the unique number that keeps track of inodes in the inode table?
+  a: inode number
+- q: Ext uses this instead of having to reference files by their full filename and path.
+  a: inode number
+- q: One limitation of ext was that files couldn't be larger than how many GBs?
+  a: 2
+- q: ext2 adds the created, modified and (blank) time values.
+  a: last accessed
+- q: ext2 increased the maximum file size to how many TB?
+  a: 2
+- q: In later versions of ext2 the maximum file size increased to how many TB?
+  a: 32
+- q: A weakness of ext was that it would scatter block locations across the device, a problem called...
+  a: fragmentation
+- q: ext2 overcomes fragmentation by allocating disk blocks in a...
+  a: group
+- q: (true/false) One of the shortcomings of ext2 is that disk writes and inode table updates would get out of sync, causing complete corruption of the filesystem in the event of a power outage.
+  a: true
+- q: This kind of file system writes everything to a temporary file first (called the journal) and then deletes it once the inode table and the disk is updated.
+  a: journaling
+- q: In the event of a power outage or fatal crash, the system will read through the (blank) looking for uncomitted data.
+  a: journal
+- q: This type of journaling journals both the inode table and file data and is considered slower.
+  a: data mode
+- q: This type of journaling journals only the inode number and not the file.
+  a: (NEEDS TO BE COMPLETED) 

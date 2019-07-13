@@ -1,0 +1,67 @@
+- q: All changes to files in /proc/ are immediately recognized by the...
+  a: kernel
+- q: (true/false) The lspci command can show you the PCI bus speed, the Device IRQ setting and the device vendor identification.
+  a: true
+- q: (true/false) Entries for all possible devices get created on nboot even if those devices are not connected.
+  a: false
+- q: The /dev/ directory if what filesystem type?
+  a: tmpfs
+- q: what is the parameter called that suppresses most kernel messages?
+  a: quiet
+- q: (true/false) systemd.unit=rescue.target will change the systemd boot target to rescue.target instead of default.
+  a: true
+- q: what is the name of the file in /proc/ that lists parameters passed from the bootloader to the kernel? (no path)
+  a: cmdline
+- q: What is the first program that is usually started at boot time by the kernel using SysV init?
+  a: /sbin/init
+- q: Which command will display messages from the kernel that were output during the normal boot sequence? (no path)
+  a: dmesg
+- q: Which command will write a message to the terminals of all logged in users?
+  a: yell 
+- q: Which SysV init configuration file would you disable the ctl-alt-del key combination?
+  a: /proc/inittab
+- q: What command lets you go through the configuratoin questions for a specific package, already installed, as if it was being installed for the first time?
+  a: dpkg-reconfigure
+- q: (true/false) When you modify GRUB's configuration, you need to restart GRUB for it to take effect.
+  a: false
+- q: What command will list all installed packages with rpm?
+  a: rpm --list-installed
+- q: (true/false) rpm --verify takes into account inodes
+  a: false
+- q: What command will update your list of available packages on a dpkg based package management? (no sudo)
+  a: apt-get update
+- q: What option to sudo apt-cache (blank) package_name lists all dependencies for that package?
+  a: depends
+- q: Which command will disable swapping on your device?
+  a: swapoff
+- q: Which world-writeable directory should be placed in a separate partition to avoid filing up the filesystem?
+  a: /tmp
+- q: (true/false) Any directory can be used as a mount point.
+  a: true
+- q: What command creates the cache and necessary links to the most recent shared libraries found in the directories specified in the command line?
+  a: ldconfig
+- q: What shell command is used to continue bg execution of a suspended command?
+  a: bg
+- q: Ctrl + C sends what signal type to the effected process?
+  a: INT
+- q: What is the default nice value of the nice command?
+  a: 10
+- q: What is the short version of the grep parameter that will flip the match pattern to be non-matching strings only?
+  a: -v  
+- q: What command, besides top, can tell you the uptime of your server?
+  a: uptime
+- q: What command has a simple application of 'convert and copy a file' but can be used to do a ton of important things?
+  a: dd
+- q: What is the escape character in bash?
+  a: \
+- q: What would you type to escape the "\ " character?
+  a: \\
+- q: What command determines a file's type by looking it up in a big database of file types?
+  a: file
+- q: What command allows you to pipe in stdin to translate or delete characters?
+  a: tr
+- q: What is the maximum nicness value for the nice command?
+  a: 19
+- q: What command allows to remove certain text from each line of files? 
+  a: cut
+- q: 

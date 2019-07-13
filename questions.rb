@@ -46,8 +46,11 @@ user_message do
 end
 
 questions = YAML.load_file(topic)
+no_randomize = [ARGV[1], ARGV[0]].include? '--no-random'
+order = no_randomize ? questions : questions.shuffle
+
 raise "no questions in the file!" unless questions
-incorrect = ask_questions(questions.shuffle)
+incorrect = ask_questions(order)
 
 if incorrect.length > 0
   user_message do
