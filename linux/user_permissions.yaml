@@ -48,8 +48,8 @@
   a: true
 - q: (true/false) the /etc/passwd file is a standard text file and you can use an editor to perform all the standard user modifications there?
   a: true
-- q: (true/false) is the /etc/passwd file is corrupted, everybody will be able to login to the machine
-  a: true
+- q: (true/false) if the /etc/passwd file is corrupted, everybody will be able to login to the machine
+  a: false
 - q: What is the primary tool for adding a user to your system?
   a: useradd
 - q: Where are the system defaults set for the useradd command?

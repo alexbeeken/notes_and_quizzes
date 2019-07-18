@@ -6,13 +6,13 @@
   a: GID
 - q: Group information is stored in...
   a: /etc/group
-- q: In the /etc/group file, which column number can be described as: group name
+- q: In the /etc/group file, which column number can be described as group name
   a: 1 
-- q: In the /etc/group file, which column number can be described as: group password
+- q: In the /etc/group file, which column number can be described as group password
   a: 2
-- q: In the /etc/group file, which column number can be described as: GID
+- q: In the /etc/group file, which column number can be described as GID
   a: 3
-- q: In the /etc/group file, which column number can be described as: list of user accounts that belong to that group
+- q: In the /etc/group file, which column number can be described as list of user accounts that belong to that group
   a: 4
 - q: What can allow a non-group member to become a member temporarily (for example to run a program)?
   a: group password
@@ -30,17 +30,17 @@
   a: -G
 - q: Which command allows you to change information about a group (although there isn't much to change)
   a: groupmod
-- q: The first char in this permissions string: -rw-rw-r-- tells you that this is what kind of listing?
+- q: The first char in this permissions string -rw-rw-r-- tells you that this is what kind of listing?
   a: file
-- q: The first char in this permissions string: drw-rw-r-- tells you that this is what kind of listing?
+- q: The first char in this permissions string drw-rw-r-- tells you that this is what kind of listing?
   a: directory
-- q: The first char in this permissions string: lrw-rw-r-- tells you that this is what kind of listing?
+- q: The first char in this permissions string lrw-rw-r-- tells you that this is what kind of listing?
   a: link
-- q: The first char in this permissions string: crw-rw-r-- tells you that this is what kind of listing?
+- q: The first char in this permissions string crw-rw-r-- tells you that this is what kind of listing?
   a: character device
-- q: The first char in this permissions string: brw-rw-r-- tells you that this is what kind of listing?
+- q: The first char in this permissions string brw-rw-r-- tells you that this is what kind of listing?
   a: block device
-- q: The first char in this permissions string: nrw-rw-r-- tells you that this is what kind of listing?
+- q: The first char in this permissions string nrw-rw-r-- tells you that this is what kind of listing?
   a: network device
 - q: What is the first grouping of permissions for in a permissions string?
   a: owner
