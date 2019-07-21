@@ -1,0 +1,32 @@
+- q: Each major linux distribution has a PMS... what does it stand for?
+  a: Package Management System
+- q: Software packages are stored on servers called...
+  a: repositories
+- q: What is it called when another package is required for one package to run properly?
+  a: dependencies
+- q: (true/false) There is a single standardized PMS utility for Linux software.
+  a: false
+- q: The two primary PMS base utilities in Linux are dpkg and...
+  a: rvm
+- q: Debian based distros use which PMS utility at their base?
+  a: dpkg
+- q: Red hat based distros, like Fedora, openSUSE and Mandrive use which PMS utility at their base?
+  a: rvm
+- q: What tool is essentially a front end for dpkg and the apt tools?
+  a: aptitude
+- q: What argument to aptitude (like aptitude (blank) (package name)) will display info about the package even if not installed?
+  a: show
+- q: (true/false) aptitude has a command to show all files associated with a particular package and you definitely don't need to go to dpkg to do this... wink
+  a: false
+- q: what argument to dpkg lists all files associated with a given package? (include hyphen(s))
+  a: -L
+- q: what argument to dpkg lets you find what package a given file belongs to? (include hyphen(s))
+  a: --search 
+- q: What aptitude (blank) command can help safely manage dependency issues when upgrading all packages?
+  a: safe-upgrade
+- q: Which command should you use to remove a software package but not its data and configuration (using aptitude)?
+  a: remove
+- q: Which command should you use to remove a software package and its data and configuration (using aptitude)?
+  a: purge
+- q: Where are aptitude repository locations stored?
+  a: /etc/apt/sources.list
