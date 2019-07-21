@@ -88,19 +88,19 @@
   a: /etc/fstab
 - q: (true/false) you can run fsck on a mounted filesystem.
   a: false
-- q: What is a useful way to run a fsck on your bootup drive? (hint: it's a removable media)
+- q: What is a useful way to run a fsck on your bootup drive? (hint it's a removable media)
   a: LiveCD
 - q: What software package (abbreviated LVM) allows you to dynamically add more space to an existing filesystem by just adding a partition from another hard drive?
   a: logical volume manager
-- q: What are hard drives called in the LVM world? (abbreviated: PV)
+- q: What are hard drives called in the LVM world? (abbreviated PV)
   a: physical volumes
 - q: Each physical volume maps to a specific physical (blank) created on a hard drive.
   a: partition
-- q: Multiple PV elements are pooled together to create a... (abbreviated: VG)
+- q: Multiple PV elements are pooled together to create a... (abbreviated VG)
   a: volume group
 - q: (true/false) LVM treats volume groups like a physical hard drive but in reality it could be multiple drives spread across the system.
   a: true
-- q: What layer of LVM does linux treat just like a physical hard drive? (abbreviated: LV)
+- q: What layer of LVM does linux treat just like a physical hard drive? (abbreviated LV)
   a: logical volume
 - q: (true/false) You can format a logical volume with only specific filesystems.
   a: false

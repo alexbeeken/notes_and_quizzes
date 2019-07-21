@@ -1,0 +1,11 @@
+- q: What command enters character-wise visual mode?
+  a: v
+- q: What command enters line-wise visual mode?
+  a: V
+- q: What command enters block-wise visual mode?
+  a: ctrl+v
+- q: What command reselects the last visual selection? 
+  a: gv
+- q: In visual mode what key do you use to toggle which end is the \"free end\"?
+  a: o
+- q: 
