@@ -32,3 +32,105 @@
   a: data mode
 - q: This type of journaling journals only the inode number and not the file.
   a: (NEEDS TO BE COMPLETED) 
+- q: What year was ext3 added to the linux kernel?
+  a: 2001
+- q: ext3 has the same inode table as ext2 but also adds a (blank) file.
+  a: journal
+- q: What year was the ext4 filesystem added to the linux kernel?
+  a: 2008
+- q: In addition to compression and encryption, ext4 also supports a new feature called...
+  a: extents
+- q: ext4 adds a way to allocate more memory than physically exists called...
+  a: block preallocation
+- q: What journaling system, created in 2001, is the first and one of the fastest?
+  a: ReiserFS
+- q: ReiserFS only supports what kind of journaling mode?
+  a: writeback
+- q: ReiserFS uses a technique called (blank) which stuffs data from one file into an empty space in a data block of another file.
+  a: tailpacking
+- q: In 2004, the Reiser team began working on...
+  a: Reiser4
+- q: What filesystem was developed by IBM in 1990 for its AIX flavor of Linux? (acronym)
+  a: jfs
+- q: What journaling method does JFS use?
+  a: ordered
+- q: What journaling filesystem was created in 1994 by Silicon Graphics Incorporated (SGI) for its IRIX commercial unix system? (XFS)
+  a: xfs
+- q: With journaling you must choose between safety and what?
+  a: performance
+- q: What alternative to journaling makes a copy of modified data?
+  a: copy-on-write
+- q: COW or copy-on-write filesystems create what instead of overwriting files? Aka clone
+  a: writeable-snapshots
+- q: What COW filesystem was developed by Sun Microsystems in 2005 for the OpenSolaris OS?
+  a: zfs
+- q: What COW filesystem was developed by Oracle in 2007, also called b-tree filesystem?
+  a: btrfs
+- q: What command is used to help organize partitions on any storage device installed on the system?
+  a: fdisk
+- q: (true/false) primary partitions can be formatted with a filesystem directly.
+  a: true
+- q: (true/false) extended partitions can only contain other primary partitions.
+  a: true
+- q: What is the maximum number of partitions on a device without using extended partitions?
+  a: 4
+- q: Before you can store data on a partition you have to format it with a...
+  a: filesystem
+- q: What is the command to make an ext4 filesystem?
+  a: mkfs.ext4
+- q: (true/false) you can use the type command to check if a filesystem utility is installed, like type mkfs.ext4
+  a: true
+- q: What command is used to check and repair most file system types?
+  a: fsck
+- q: What type of filesystem doesn't necessarily need the fsck command? (acronym)
+  a: COW
+- q: What file does fsck use to determine the filesystem on a storage device that has been mounted normally?
+  a: /etc/fstab
+- q: (true/false) you can run fsck on a mounted filesystem.
+  a: false
+- q: What is a useful way to run a fsck on your bootup drive? (hint: it's a removable media)
+  a: LiveCD
+- q: What software package (abbreviated LVM) allows you to dynamically add more space to an existing filesystem by just adding a partition from another hard drive?
+  a: logical volume manager
+- q: What are hard drives called in the LVM world? (abbreviated: PV)
+  a: physical volumes
+- q: Each physical volume maps to a specific physical (blank) created on a hard drive.
+  a: partition
+- q: Multiple PV elements are pooled together to create a... (abbreviated: VG)
+  a: volume group
+- q: (true/false) LVM treats volume groups like a physical hard drive but in reality it could be multiple drives spread across the system.
+  a: true
+- q: What layer of LVM does linux treat just like a physical hard drive? (abbreviated: LV)
+  a: logical volume
+- q: (true/false) You can format a logical volume with only specific filesystems.
+  a: false
+- q: (true/false) A physical volume in the lvm world represents the actual physical disk and not the partition.
+  a: false
+- q: (true/false) A physical volume in the lvm world corresponds to a partition.
+  a: true
+- q: (true/false) Physical volumes in the lvm world can coexist on the same actual physical hard disk.
+  a: true
+- q: What disk space tool was released in 1998 and only available in 2.4 Linux kernels? (acronym)
+  a: lvm1
+- q: What disk space tool was made available in 2.6 Linux kernels?
+  a: lvm2
+- q: lvm1 can create snapshots but, in contrast to lvm2, they are...
+  a: read only
+- q: (true/false) lvm2 allows you to create a read-write snapshot of an active logical volume.
+  a: true
+- q: What feature of lvm2 can improve read/write performance by spreading blocks across multiple drives, thus allowing read/writes of different blocks to happen simultaneously?
+  a: striping
+- q: (true/false) lvm striping is not as fault tolerant as RAID striping.
+  a: true
+- q: What can lvm create to act as a complete copy of a logical volume in real time?
+  a: mirror
+- q: What is the hex code for the lvm partition type?
+  a: 8e
+- q: What lvm2 command creates the physical volume and defines which partition to use for it?
+  a: pvcreate
+- q: What lvm command do you use to create a volume group? 
+  a: vgcreate
+- q: What lvm command do you use to display info about a volume group?
+  a: vgdisplay
+- q: What lvm command do you use to create a logical volume?
+  a: lvcreate
