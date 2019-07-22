@@ -1,0 +1,30 @@
+- q: To run your scripts as commands, you must add their path to which environment variable (with no $)
+  a: PATH
+- q: What command displays all the active environment variables?
+  a: set
+- q: What environment variable displays the logged in users home path? (no $)
+  a: HOME
+- q: How would you create a user variable named foo and assign it a value of 5?
+  a: foo=5
+- q: (true/false) shell scripts automatically determine data types for user variables.
+  a: true
+- q: (true/false) without the dollar sign, foo=bar will set the value of foo to the string "bar".
+  a: true
+- q: if bar=5, what does foo= when you assign it foo=$bar
+  a: 5
+- q: What do you use to send one command's output to a file? (overwriting the file)
+  a: ">"
+- q: What do you use to append one commands' output to a file?
+  a: ">>"
+- q: What do you use to send the contents of a file as input to a command?
+  a: <
+- q: How would you direct the contents of foo.txt to wc in order to get a word count of that file?
+  a: wc < foo.txt
+- q: What can you use to specify input from the command line? (weird thing mostly used for math and complex stuff)
+  a: <<
+- q: What is called when you direct the output of one command to the input of another command?
+  a: piping
+- q: What command allows you to evaluate expressions in the command line?
+  a: expr
+- q: What is the shorthand for expr 2 * 3 that is much easier? (no spaces)
+  a: $[2*3]

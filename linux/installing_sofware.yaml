@@ -7,11 +7,11 @@
 - q: (true/false) There is a single standardized PMS utility for Linux software.
   a: false
 - q: The two primary PMS base utilities in Linux are dpkg and...
-  a: rvm
+  a: rpm
 - q: Debian based distros use which PMS utility at their base?
   a: dpkg
 - q: Red hat based distros, like Fedora, openSUSE and Mandrive use which PMS utility at their base?
-  a: rvm
+  a: rpm
 - q: What tool is essentially a front end for dpkg and the apt tools?
   a: aptitude
 - q: What argument to aptitude (like aptitude (blank) (package name)) will display info about the package even if not installed?
@@ -30,3 +30,9 @@
   a: purge
 - q: Where are aptitude repository locations stored?
   a: /etc/apt/sources.list
+- q: (true/false) one of yums strengths is that it uses very logical and user friendly commands.
+  a: true
+- q: What option to yum update allows you to skip broken packages? include hypen(s)
+  a: --skip-broken
+- q: Where are yum's repositories defined?
+  a: /etc/yum.repos.d
