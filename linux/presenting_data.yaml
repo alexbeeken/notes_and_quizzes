@@ -1,0 +1,37 @@
+- q: What is the abbreviation for file descriptor 0?
+  a: STDIN
+- q: What is the abbreviation for file descriptor 1?
+  a: STDOUT 
+- q: What is the abbreviation for file descriptor 2?
+  a: STDERR
+- q: What is STDIN for a terminal interface? (no the)
+  a: keyboard
+- q: On a terminal interface the STOUT is the...
+  a: terminal monitor
+- q: By default STDERR is the same as... 
+  a: STDOUT
+- q: (true/false) when you change STDOUT, STDERR also changes.
+  a: false
+- q: How would you redirect errors to a different file?
+  a: 2>
+- q: What command can you use to redirect file descriptors for the remainder of the script? 
+  a: exec
+- q: What would you add to exec to close file descriptor 3? 
+  a: 3>&-
+- q: What command lists all of the open file descriptors on a linux system? 
+  a: lsof
+- q: What is the standard location of the null file?
+  a: /dev/null
+- q: What do you direct to when you dont want any output from a script?
+  a: /dev/null
+- q: What command sends STDIN to STDOUT and the filename you pass to it?
+  a: tee
+- q: What option can you pass to tee to append the data to the file? (include hyphen)
+  a: -a
+- q: You can create file descriptors 3 through (what?) 
+  a: 8
+- q: What command can easily create temporary files and directories?
+  a: mktemp
+
+
+
