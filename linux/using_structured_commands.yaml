@@ -1,0 +1,35 @@
+- q: What status code is the only successful one for an if-then control structure in bash?
+  a: zero
+- q: How do you end an if statement?
+  a: fi
+- q: What is the concatenation of else if that bash uses?
+  a: elif
+- q: (true/false) if-then in bash can evaluate other expressions besides a command's exit status.
+  a: false
+- q: What command provides a tool for using more sophisticated conditionals in an if-else block.
+  a: test
+- q: This parameter to the test command checks if file exists and is a directory.
+  a: -d 
+- q: This parameter to the test command checks if file exists and is writeable.
+  a: -w
+- q: (true/false) It's a good idea to check if a directory exists before you write to it using an if-then. 
+  a: true
+- q: These characters [] are short hand for what bash command when used in an if-else statement?
+  a: test
+- q: What would you add to this to check if file is empty? [ (blank) $file_name ]
+  a: -s
+- q: (true/false) There are a lot of options to test that allow for checking different things.
+  a: true
+- q: (true/false) You can use double parentheses for mathematical expressions in an if else.
+  a: true
+- q: Which command can provide cleaner control flow than the if-else setup?
+  a: case
+- q: What does the bash IFS stand for?
+  a: internal field separator
+- q: The IFS is either a space, a tab or... (no space)
+  a: newline
+- q: (true/false) You can change the IFS to something specific if it helps you.
+  a: true
+- q: (true/false) When changing the IFS its important to set it back to its old value.
+  a: true
+- q:  

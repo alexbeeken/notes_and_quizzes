@@ -1,0 +1,11 @@
+- q: What is the technically correct term for commands entered during command line mode?
+  a: Ex commands
+- q: What command line mode command makes a new tab? (with :)
+  a: :tabnew
+- q: What command line mode command moves you to the next tab? (with :)
+  a: :tabnext
+- q: What command line mode command moves you to the previous tab? (with :)
+  a: :tabprev
+- q: What command line mode command splits the window? (with :) 
+  a: :split
+- q: 

@@ -1,0 +1,38 @@
+- q: What special variable gets you the first positional parameter in a script? (with $)
+  a: $1
+- q: What special variable gets you the name of the script being run? (with $)
+  a: $0
+- q: How would you get the tenth postional parameter inside the script?
+  a: ${10}
+- q: What command helps strip the script command ($0) to just the file name and not the path or ./
+  a: basename
+- q: (true/false) Using the $0 variable to change behavior makes sense because you can copy the file or use a symbolic link. 
+  a: true
+- q: What special variable is a count of the number of command line arguments passed to the script? (with $)
+  a: $#
+- q: What trick could you use to get the last command line parameter? (with $)
+  a: ${!#}
+- q: (true/false) you can use the $ inside of the ${} 
+  a: false
+- q: What symbol should you use instead of $ inside of ${}?
+  a: !
+- q: Which special variable holds all of the arguments to the bash script as a single word? (with $)
+  a: $*
+- q: Which special variable holds all of the arguments to the bash script as separate words? (with $)
+  a: $@
+- q: What command will move all command line parameters one position to the left?
+  a: shift
+- q: (true/false) when you shift a parameter out using shift, you can recover it easily.
+  a: false
+- q: What special character do linux scripts use to indicate the end of the options and beginning of parameters?
+  a: --
+- q: What tool helps make getting options easier?
+  a: getopt
+- q: What command do you use to create a prompt for the user to type in immediate info?
+  a: read
+- q: What option to read allows you to specify the prompt text? (with -)
+  a: -p
+- q: What option to read allows you to specify a timeout in case the user walks away? (with -)
+  a: -t
+- q: The read command can read a file but it does so one (blank) at a time.
+  a: line

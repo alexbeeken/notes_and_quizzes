@@ -1,0 +1,44 @@
+- q: In OpenID, authenticating a user involves obtaining a (blank) and validating it.
+  a: ID token
+- q: When a user is prompted within the QBO to grant access to your application it is called...
+  a: user consent
+- q: What parameter of OpenID connect determines where the API server redirects the user after the user completes the authorization flow?
+  a: redirect_uri
+- q: In OpenID, always set which parameter to "code"?
+  a: response_type
+- q: What parameter of OpenID connect allows you to provide protection against CSRF? By returning the string that you provided.
+  a: state
+- q: If your initial authentication and authorization request is validated Intuit will then prompt for what?
+  a: user consent
+- q: When the user has granted consent, the Intuit Oauth 2.0 server will redirect to your provided redirect_uri with 2 url params":" the "state" string you used for protection against CSRF and (blank) with information to be used in the next step.
+  a: code
+- q: Once you have the "code" url parameter you can exchange it for an ID token and an...
+  a: access token
+- q: What is the required value of the grant_type parameter?
+  a: authorization_code
+- q: The first part of a JSON web token is called the.. 
+  a: header
+- q: The second part of a JSON web token is called the.. 
+  a: payload
+- q: The third part of a JSON web token is called the.. 
+  a: signature
+- q: The key in the JWT header that contains the key id used to sign the payload is called...
+  a: kid
+- q: The key in the JWT header that contains the hashing algorithm being used is called...
+  a: alg
+- q: The JWT payload contains...
+  a: claims
+- q: This Intuit claim identifies the audience this ID token is intended for. 
+  a: aud
+- q: This Intuit claim is the time the ID token was authorized 
+  a: auth_time
+- q: This Intuit claim is the time the ID token expires, a UNIX timestamp
+  a: exp
+- q: This Intuit claim is the time the ID token was issues, a UNIX time
+  a: iat
+- q: This Intuit claim is the issuer identifier for the issuer of the response. Always set to the same url.
+  a: iss
+- q: This Intuit claim is the ID that identifies the specific QBO company to which a connection is made and is returned when either QBO API or payments API scopes are specified in the auth request payload. You use this value in all QBO API calls.
+  a: realmid
+- q: This Intuit claim is an identifier for the user, unique among all intuit accounts and never reused. An intuit account can have multiple emails at different points in time, but this value never changes. Use this as your unique id for users.
+  a: sub

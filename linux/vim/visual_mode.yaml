@@ -2,10 +2,11 @@
   a: v
 - q: What command enters line-wise visual mode?
   a: V
-- q: What command enters block-wise visual mode?
+- q: what command enters block-wise visual mode?
   a: ctrl+v
-- q: What command reselects the last visual selection? 
+- q: wwhat command reselects the last visual selection? 
   a: gv
 - q: In visual mode what key do you use to toggle which end is the \"free end\"?
   a: o
-- q: 
+- q: (true/false) when you enter visual block mode, you can edit multiple lines using i, a, I and A.
+  a: true
