@@ -1,3 +1,56 @@
 - q: Java applications are typically compiled to what?
   a: bytecode
-- q: 
+- q: (true/false) Java is class based.
+  a: true
+- q: (true/false) Java is object oriented.
+  a: true
+- q: What does WORA stand for? (all lower case)
+  a: write once run anywhere
+- q: bytecode can run on any (blank) regardless of underlying computer architecture.
+  a: JVM
+- q: What is the latest version of Java (as of July 2019)?
+  a: 11
+- q: What was java originally designed for?
+  a: interactive television
+- q: What year was java 1.0 released?
+  a: 1996
+- q: (true/false) Sun made all of Java's core code open source on May 8, 2007
+  a: true
+- q: What do users install to execute java bytecode for standalone java applications? (acronym JRE, lower case)
+  a: java runtime environment
+- q: (true/false) Java uses an automatic garbage collector to manage memory in the object lifecycle.
+  a: true
+- q: Once no references to an object remain, the (blank) becomes eligible to be freed automatically by the garbage collector.
+  a: unreachable memory
+- q: A memory leak can occur when a programmer's code holds a reference to an object that is...
+  a: no longer needed
+- q: If method for a non-existent object are called, what kind of exception is thrown?
+  a: "null pointer"
+- q: (true/false) Garbage collection can happen at any time.
+  a: true
+- q: Garbage collection is garunteed to occur when there is (insufficient/insignificant) free memory on the heap to allocate a new object.
+  a: insufficient
+- q: (true/false) explicit memory management is possible in Java.
+  a: false
+- q: (true/false) Java does not support C/C++ style pointer arithmetic.
+  a: true
+- q: A single line comment in Java starts with...
+  a: //
+- q: A multi-line comment starts with...
+  a: /*
+- q: A multi-line comment ends with...
+  a: */
+- q: The Javadoc commenting style opens with...
+  a: /**
+- q: A .java file must be comiled into java (blank) before it can be executed.
+  a: bytecode
+- q: Compiling foo.java will produce a file called what?
+  a: foo.class
+- q: This keyword notes that a method can be called from code in other classes.
+  a: public
+- q: This keyword notes a class can be used by classes outside the immediate hierarchy.
+  a: public
+- q: This keyword notes that a method is only associated with that class and not with any specific instance of that class.
+  a: static
+- q: What keyword indicates that the main method does not return any value to the caller?
+  a: void
