@@ -31,14 +31,18 @@ Find.find('./') do |path|
     yaml_file_paths << path if path =~ /.*\.yaml$/
   end
 end
-quiz_names = yaml_file_paths.map { |q| q.split("/").last }
+quiz_names = yaml_file_paths.map { |q| [q.split("/").last(2).first, q.split("/").last] }
 
 topic = nil
 user_message do
   puts 'Interview Practice!'
   puts 'choose topic'
   quiz_names.each_with_index do |topic, index|
-    puts "#{index + 1} - #{topic}"
+    if ARGV[0]
+      puts "#{index + 1} - #{topic[0]} - #{topic[1]}"
+    else
+      puts "#{index + 1} - #{topic[1]}"
+    end
   end
   print "make your selection: "
   number = STDIN.gets.chomp.to_i

@@ -1,0 +1,42 @@
+- q: What is the name for the nonnegative integer that is used to refer to all types of open files?
+  a: file descriptor
+- q: (true/false) Each processor has it's own set of file descriptors.
+  a: true
+- q: By convention file descriptor 0 will always be what?
+  a: standard intput
+- q: By convention file descriptor 1 will always be what?
+  a: standard output
+- q: By convention file descriptor 2 will always be what?
+  a: standard error
+- q: What file descripter number is generally the same as the POSIX standard name STDIN_FILENO?
+  a: 0
+- q: What file descripter number is generally the same as the POSIX standard name STDOUT_FILENO?
+  a: 1
+- q: What file descripter number is generally the same as the POSIX standard name STDERR_FILENO?
+  a: 2
+- q: When referencing the stdio, stdout and stderr file descriptors should you use numbers or POSIX names? 
+  a: POSIX names
+- q: The open() system call always returns a...? 
+  a: file descriptor
+- q: The first argument to the open() system call is the file's...?
+  a: pathname
+- q: The second argument to the open() system call are the (blank) which determined if the file is for reading, writing or both.
+  a: flags
+- q: The third argument to the open() system call is the (blank) argument that determines permissions to be placed on the file.
+  a: mode
+- q: The read() system call always returns the number of (blank) read.
+  a: bytes
+- q: What does the read() call return if no further bytes could be read?
+  a: 0
+- q: The first argument to the read() and write() system calls is an integer known as a...?
+  a: file descriptor
+- q: The second argument to the read() and write() system call is a pointer to the (blank) to store what is being read (or where the data to write lives).
+  a: buffer
+- q: The third argument to the read() and write() system call is the (blank) of bytes to read or write.
+  a: count
+- q: The close() system call takes one argument and it's the (blank) of the file to close. 
+  a: file descriptor
+- q: The close() system call returns (blank) on success.
+  a: 0
+- q: The close() system call returns (blank) on error.
+  a: -1
