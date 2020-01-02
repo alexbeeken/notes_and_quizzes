@@ -3,7 +3,7 @@
 - q: (true/false) Each processor has it's own set of file descriptors.
   a: true
 - q: By convention file descriptor 0 will always be what?
-  a: standard intput
+  a: standard input
 - q: By convention file descriptor 1 will always be what?
   a: standard output
 - q: By convention file descriptor 2 will always be what?
