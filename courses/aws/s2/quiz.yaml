@@ -1,0 +1,17 @@
+- q: Is the General Purpose (SSD) the default storage option for EBS? (t/f)
+  a: t
+- q: Which EC2 instance type is used for small and medium sized databases processing enterprise applications?
+  a: General Purpose
+- q: Which EC2 instance type is a high performance front-end fleets, web servers batch processing, distributed analytics, science and engineering applications, etc?
+  a: Compute Optimized
+- q: Which EC2 instance type is for high performance databases, distributed memory caches, in memory analytics, genome assemby and analysis, etc?
+  a: Memory Optimized
+- q: Which EC2 instance type is for 3D application streaming, machine learning or video encoding?
+  a: GPU
+- q: Which EC2 instance type is for NoSQL dbs like Cassandra and MongoDB or Massively Parallel Processing data warehousing, MapReduce and Hadoop, etc?
+  a: Storage Optimized
+- q: What EC2 instance type is governed by CPU credits?
+  a: T2 Burtable Performance
+- q: Which EC2 storage option is physically attached to the host server?
+  a: Instance Store
+- q:     
