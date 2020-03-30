@@ -1,0 +1,110 @@
+- q: expands listed arguments and redirects as specified
+  a: ":"
+- q: reads and executes commands from a designated file in the current shell
+  a: "."
+- q: resumes a job in background mode
+  a: bg
+- q: binds a keyboard sequence to a readline function or macro
+  a: bind
+- q: exits from a for, while, select or until loop
+  a: break
+- q: executes the specified shell built-in command
+  a: builtin
+- q: returns the context of any active subroutine call
+  a: caller
+- q: executes the specified command without the normal shell lookup
+  a: command
+- q: generates posdible completion matches for the specified word
+  a: compgen
+- q: displays how the specified words would be completed
+  a: complete
+- q: changes options for how the specified word would be completed
+  a: compopt
+- q: resumes the next iteration of a for, while, select, or until loop
+  a: continue
+- q: declares a variable or variable type
+  a: declare
+- q: displays a list of currently remembered directories
+  a: dirs
+- q: removes the specified jobs from the jobs table for the process
+  a: disown
+- q: displays the specified string to STDOUT
+  a: echo
+- q: enables or disables the specified built in shell command
+  a: enable
+- q: concatenates the specified arguments into a single command, and executes thes command
+  a: eval
+- q: replaces the shell process with the specified command
+  a: exec
+- q: forces the shell to exit with the specified status
+  a: exit
+- q: sets the specified variables to be available for child shell processes
+  a: export
+- q: selects a list of commands from the history list
+  a: fc
+- q: resumes a job in foreground mode
+  a: fg
+- q: parses the specified positional parameters
+  a: getopts
+- q: finds and remembers the full pathname of the specified command
+  a: hash
+- q: display a help file
+  a: help
+- q: display the command history
+  a: history
+- q: list the active jobs
+  a: jobs
+- q: sends a system signal to the specified PID
+  a: kill
+- q: evaluates each argument as a mathematical expression
+  a: let
+- q: creates a limited-scope variable in a function
+  a: local
+- q: exits a login shell
+  a: logout
+- q: Reads STDIN lines and puts them into an indexed array
+  a: mapfile
+- q: removes entries from the directory stack
+  a: popd
+- q: displays text using formatted strings
+  a: printf
+- q: adds a directory to the directory stack
+  a: pushd
+- q: reads one line of data from stdin and assigns to a variable
+  a: read
+- q: reads STDIN lines and puts them into an indexed array (the one that starts with r)
+  a: readarray
+- q: reads one line from STDIN and assigns it to a variable that can't be changed
+  a: readonly
+- q: forces a function to exit with a value that can be retrieved by the calling script
+  a: return
+- q: sets and displays environment variable values and shell attributes
+  a: set
+- q: rotates positional parameters down one position
+  a: shift
+- q: toggles the values of variables controlling optional shell behavior
+  a: shopt
+- q: reads and executes commands from a designated file in the current shell
+  a: source
+- q: suspends the execution of the shell until a SIGCONT signal is received
+  a: suspend
+- q: returns an exit status of 0 or 1 based on the specified condition
+  a: test
+- q: displays the accumulated user and system shell times
+  a: times
+- q: executes the specified command if the specified system signal is received
+  a: trap
+- q: displays how the specified word would be interpreted if used as a command
+  a: type
+- q: declares a variable or variable type
+  a: typeset
+- q: selts a limit on the specified resource for system users
+  a: ulimit
+- q: sets default permissions for newly created files and directories
+  a: umask
+- q: removes the specified alias
+  a: unalias
+- q: removes the specified environment variable or shell attribute
+  a: unset
+- q: waits for the specified process to complete, and returns the exit status
+  a: wait
