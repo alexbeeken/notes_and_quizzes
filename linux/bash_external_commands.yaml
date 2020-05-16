@@ -1,0 +1,110 @@
+- q: compresses using the Burrows-Wheeler block sorting text compression algorithm and Huffman coding
+  a: bzip2
+- q: lists the contents of the specified file
+  a: cat
+- q: changes the password expiration date for the specified file
+  a: chage
+- q: changes the specified user account's comment information
+  a: chfn
+- q: changes the default group of the specified file or directory
+  a: chgrp
+- q: reads a file of login name and password pairs and updates the passwords
+  a: chpasswd
+- q: changes the specified user account's default shell
+  a: chsh
+- q: removes text from a terminal emulator or virtual console terminal
+  a: clear
+- q: original unix file compression utility
+  a: compress
+- q: spawns a subshell in background mode and executes the designated command
+  a: coproc
+- q: copies the specified files to an alternate location
+  a: cp
+- q: initiates the editor for the users' crontable file, if allowed
+  a: crontab
+- q: removes a designated portion of each specified file's lines
+  a: cut
+- q: displays the date in various formats
+  a: date
+- q: displays current disk space statistics for all mounted devices
+  a: df
+- q: displays disk usage statistics for the specified file path
+  a: du
+- q: invokes the emacs text editor
+  a: emacs
+- q: views the file type of the specified file
+  a: file
+- q: checks available and used memory on the system
+  a: free
+- q: streams editing using programming language commands
+  a: gawk
+- q: searches a file for the specified text string
+  a: grep
+- q: invokes the GNOME desktop editor
+  a: gedit
+- q: parses command options including long options
+  a: getopt
+- q: displays group membership of the designated user
+  a: groups
+- q: creates a new system group
+  a: groupadd
+- q: modifies an existing group
+  a: groupmod
+- q: gnu zip program
+  a: gzip
+- q: displays the first portion of the specified file's contents
+  a: head
+- q: sends a system signal to a running process based on process name
+  a: killall
+- q: invokes the kwrite text editor
+  a: kwrite
+- q: advanced viewing of file contents
+  a: less
+- q: creates a link to a file using alias name
+  a: link
+- q: creates a symbolic link or hard link to a designated file
+  a: ln
+- q: creates the whatis database allowing man page keyword searches
+  a: makewhatis
+- q: lists the contents of the specified file , pausing after each screen of data
+  a: more
+- q: display or mounts disk devices into the virtual filesystem
+  a: mount
+- q: runs a command using different priority level on the system
+  a: nice
+- q: changes the password for a system user account
+  a: passwd
+- q: displays information about the running processes
+  a: ps
+- q: changes priority of running process on the system
+  a: renice
+- q: organizes data in a data file based on specified order
+  a: sort
+- q: views file statistic of specified file
+  a: stat
+- q: archives data and directories into a single file
+  a: tar
+- q: displays active processes, showing vital statistics
+  a: top
+- q: removes a mounted disk device from the virtual filesystem
+  a: umount
+- q: displays information on how long the system has been running
+  a: uptime
+- q: creates a new system user account
+  a: useradd
+- q: removes an existing user account
+  a: userdel
+- q: modifies an existing user account
+  a: usermod
+- q: produces a detailed report on memory and cpu usage on the system
+  a: vmstat
+- q: displays designated command's files, including binary, source code, and man pages
+  a: whereis
+- q: finds location of an executable file
+  a: which
+- q: displays users logged into system
+  a: who
+- q: displays current user's username
+  a: whoami
+- q: takes items from STDIN, builds commands and executes the commands
+  a: xargs
