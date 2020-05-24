@@ -1,0 +1,14 @@
+- q: finish material around interior fixtures like doors, windows or the floor and ceilings of rooms
+  a: trim
+- q: "the board where the roof means the house, other words: the main board that carries the gutter"
+  a: fascia
+- q: the boards that attach fascia to a house in an overhang, only applies to overhangs
+  a: soffits
+- q: "a non-loadbearing layer on the outside of a house to protect from weather: brick, vinyl, stucco, etc."
+  a: cladding
+- q: a 'satellite' service breaker that is separate from the main cirtuit breaker for practical reasons
+  a: subpanel
+- q: a term for the collection of components that make up the entirety of a constructed roof
+  a: roof assembly
+- q: a device installed in the basement or crawlspace to keep it dry or prevent flooding.
+  a: sump pump
